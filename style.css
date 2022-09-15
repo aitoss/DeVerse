@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+p{
+    font-family: 'Roboto';
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+
+/* -------------------------------------------------------------------------- NavBar Codes Start */
+.navbar{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(7, 83, 116, 0.05);
+}
+.navbar-nav{
+    margin-right: 30px;
+}
+.nav-link,.logoSub,.navbar-brand{
+    margin-right: 8px;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+.navbar-brand{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 25px;
+    color: #075374;
+}
+.nav-link{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #7F7F7F;
+}
+.logoSub{
+    margin-left: 3px;
+    font-size: 16px;
+    color: #075374;
+}
+.navbar-toggler-icon img{
+    height: 23px;
+}
+
+.rulebookButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px;
+    gap: 12px;
+
+    width: 140px;
+    height: 40px;
+
+    background: #183153;
+    border-radius: 20px;
+    font-weight: 100;
+    border: none;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- NavBar Codes End */
+Footer
