@@ -6,7 +6,7 @@
     font-family: poppins;
 }
 p{
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
     font-weight: 500;
     font-size: 14px;
@@ -37,7 +37,7 @@ p{
     color: #075374;
 }
 .nav-link{
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #7F7F7F;
