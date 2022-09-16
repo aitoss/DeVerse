@@ -352,8 +352,8 @@ color: #183153;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    width: 60%;
-    padding: 0px, 20px;
+    width: 50%;
+    padding: 0px, 70px;
 }
 
 .tl>div{

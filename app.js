@@ -1,6 +1,6 @@
 var pins = document.querySelectorAll(".tl-img")
 var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
-var lineX = pins[0].offsetLeft + 91 + 74
+var lineX = pins[0].offsetLeft + 165
 var curveX = pins[0].offsetLeft - 40
 var lineY = 273 + window.innerHeight
 var curveY = lineY + 1
@@ -10,7 +10,7 @@ var curves = document.querySelectorAll(".tl-crv")
         curves[index].style.left = `${curveX}px`
         curves[index].style.top = `${curveY}px`
         curveY += 216
-        curveX += lineWidth + 280
+        curveX += lineWidth + 295
     })
 var lines = document.querySelectorAll(".tl-line")
     lines.forEach(function(item, index){
@@ -36,7 +36,7 @@ function tlLines(){
         curves[index].style.left = `${curveX}px`
         curves[index].style.top = `${curveY}px`
         curveY += 216
-        curveX += lineWidth + 270
+        curveX += lineWidth + 292
     })
 
     lines.forEach(function(item, index){
