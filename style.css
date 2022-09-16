@@ -231,3 +231,44 @@ p{
 }
 
 /* ---------------------------------------------------------------------------Timeline Section Ends */
+/* ------------------------------------------------------------------------prize section */
+.prize-section{
+    background: #F5FCFF;
+}
+.prize-heading{
+    font-family: 'Poppins';
+    margin-left: 210px;
+    color: #183153;
+
+}
+.head1{
+    font-size: 18px;
+    margin: 0px;
+
+}
+.head2{
+    font-size: 50px;
+    margin: 0px;
+
+}
+.prize_box{
+    display: flex;
+    justify-content: space-around;
+}
+.prize-box-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    align-content: space-around;
+    padding: 0px;
+    width: 1175px;
+    height: 400px;
+    align-content: space-around;
+    
+}
+ 
+.img_p{
+    height: 400px;
+    width: 370px;
+}
+/* ------------------------------------------------------------------------prize section End*/
