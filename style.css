@@ -161,14 +161,13 @@ p{
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline{
+#timeline, .prize-section{
     background-color: white;
-    padding: 0px 16px;
+    padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline>div{    
-    max-width: clamp(1180px, calc(100vw - 40px), 288px);    
-    height: calc(100vh - 90px);
+#timeline, .prize-section>div{    
+    max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
     flex-direction: column;
@@ -242,36 +241,15 @@ p{
 .prize-section{
     background: #F5FCFF;
 }
-.prize-heading{
-    font-family: 'Poppins';
-    margin-left: 210px;
-    color: #183153;
-
-}
-.head1{
-    font-size: 18px;
-    margin: 0px;
-
-}
-.head2{
-    font-size: 50px;
-    margin: 0px;
-
-}
-.prize_box{
-    display: flex;
-    justify-content: space-around;
-}
 .prize-box-wrapper{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; 
     align-content: space-around;
     padding: 0px;
-    width: 1175px;
-    height: 400px;
+    max-width: 1175px;
     align-content: space-around;
-    
+    margin: auto auto;
 }
  
 .img_p{
