@@ -5,7 +5,16 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: poppins; */
+    font-family: poppins;
+}
+:root{
+    --primary-blue: #183153;
+    --secondary-blue: #E9F5FF;
+    --light-blue: #F5FCFF;
+    --dark-content: #333333;
+}
+body{
+    margin-top: 50px;
 }
 p{
     font-family: 'Poppins';
@@ -233,3 +242,76 @@ border-radius: 20px;
 
 
 /* -------------------------------------------------------------------------- Hero page Codes End */
+
+/* ---------------------------------------------------------------------------Timeline Section Starts */
+
+#timeline{
+    background-color: var(--light-blue);
+    padding: 0px 16px;
+}
+#timeline>div{    
+    max-width: clamp(1180px, calc(100vw - 40px), 288px);    
+    height: calc(100vh - 90px);
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-txt{
+    font-weight: 500px;
+    font-size: 18px;
+    color: var(--primary-blue);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--primary-blue);
+}
+
+.tl-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 60%;
+}
+
+.tl>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tl-card{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tl-date{
+    font-weight: bold;
+    color: var(--primary-blue);
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.tl-img{
+    margin-top: 7px;
+}
+.tl-event{
+    font-weight: 500px;
+    font-size: 18px;
+    color: var(--dark-content);
+}
+
+/* ---------------------------------------------------------------------------Timeline Section Ends */
