@@ -7,6 +7,9 @@
     padding: 0;
     font-family: poppins;
 }
+body{
+    margin-top: 50px;
+}
 p{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -18,10 +21,13 @@ p{
 }
 
 
-/* -------------------------------------------------------------------------- NavBar Codes Start */
+/* -------------------------------------------------------------------------- hero page Codes Start */
 .navbar{
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(7, 83, 116, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .navbar-nav{
     margin-right: 10px;
@@ -144,4 +150,4 @@ p{
 
 
 
-/* -------------------------------------------------------------------------- NavBar Codes End */
+/* -------------------------------------------------------------------------- Hero page Codes End */
