@@ -245,13 +245,13 @@ border-radius: 20px;
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline{
-    background-color: var(--light-blue);
-    padding: 0px 16px;
+#timeline, .prize-section{
+    background-color: white;
+    padding: 16px 16px;
+    margin-top: 55px; /*temp*/
 }
-#timeline>div{    
-    max-width: clamp(1180px, calc(100vw - 40px), 288px);    
-    height: calc(100vh - 90px);
+#timeline, .prize-section>div{    
+    max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
     flex-direction: column;
@@ -283,14 +283,20 @@ border-radius: 20px;
     justify-content: space-between;
     align-items: stretch;
     width: 60%;
+    padding: 0px, 20px;
 }
 
 .tl>div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.tl-line{
+    position: relative;
+    left: 0px;
 }
 
 .tl-card{
@@ -315,3 +321,23 @@ border-radius: 20px;
 }
 
 /* ---------------------------------------------------------------------------Timeline Section Ends */
+/* ------------------------------------------------------------------------prize section */
+.prize-section{
+    background: #F5FCFF;
+}
+.prize-box-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    align-content: space-around;
+    padding: 0px;
+    max-width: 1175px;
+    align-content: space-around;
+    margin: auto auto;
+}
+ 
+.img_p{
+    height: 400px;
+    width: 370px;
+}
+/* ------------------------------------------------------------------------prize section End*/
