@@ -5,7 +5,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 :root{
     --primary-blue: #183153;
@@ -13,18 +14,22 @@
     --light-blue: #F5FCFF;
     --dark-content: #333333;
 }
-body{
-    margin-top: 50px;
-}
+
 p{
-    font-family: 'Poppins';
+    /* font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.1vw;
     line-height: 23px;
     letter-spacing: 0.02em;
     margin: 0;
-    color: #6E6E6E;
+    color: #6E6E6E; */
+font-weight: 400;
+font-size: 13px;
+line-height: 25px;
+letter-spacing: 0.02em;
+margin: 0;
+color: #6E6E6E;
 }
 
 
@@ -41,15 +46,13 @@ p{
 }
 .nav-link,.logoSub,.navbar-brand{
     margin-right: 8px;
-    font-style: normal;
     line-height: 21px;
     letter-spacing: 0.02em;
 }
 .navbar-brand{
-    font-family: 'Poppins';
     font-weight:bolder;
     font-size: 25px;
-    color: #183153;
+    color: var(--primary-blue);
 }
 .nav-link{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -60,7 +63,7 @@ p{
 .logoSub{
     margin-left: 3px;
     font-size: 16px;
-    color: #183153;
+    color: var(--primary-blue);
 }
 .navbar-toggler-icon img{
     height: 23px;
@@ -77,10 +80,13 @@ p{
     width: 140px;
     height: 36px;
 
-    background: #183153;
+    background: var(--primary-blue);
     border-radius: 20px;
     font-weight: 100;
     border: none;
+}
+.rulebookButton:hover{
+    background: #0F1F3D;
 }
 .navbar-toggler-icon{
     display :contents;
@@ -97,7 +103,7 @@ p{
 .heroSec{
     display: flex;
     height : 100vh;
-    margin: 0 100px 0 100px;
+    margin: 0 80px 0 80px;
     align-items: center;
 }
 .heroChild1{
@@ -108,14 +114,14 @@ p{
     width : 50%;
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .heroChild2 img{
     width: 80%;
 }
 .mainHead{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 1000;
     font-size: 5vw;
     letter-spacing: 0.02em;
@@ -124,8 +130,6 @@ p{
 .mainHeadSub{
     margin-top: -5px;
     margin-bottom: 30px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 1.2vw;
     line-height: 27px;
@@ -136,23 +140,40 @@ p{
     color: #8FBAF3;
     font-weight: 700;
 }
-.heroBtn{
+/* .heroBtn{
+    flex-wrap: wrap;
     margin-top: 40px;
     display: flex;
-    width: auto;
-flex-direction: row;
-justify-content: center;
+    width: fit-content;
+    
+/* flex-direction: row; */
+/* justify-content: center;
 align-items: center;
 padding: 10px 20px;
 gap: 19px;
 background: #E9F5FF;
 box-shadow: 0px 0px 10px rgba(235, 244, 252, 0.25);
 border-radius: 20px;
+} */
+.heroBtn{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    background-color: #E9F5FF;
+    box-shadow: 0px 0px 10px rgba(235, 244, 252, 0.25);
+        padding: 10px 0 10px 20px;
+    border-radius: 20px;
+}
+.heroBtn p{
+    font-size: 1.1vw;
+    color: #183153;
+    white-space:nowrap;
+    font-weight: 500;
 }
 .timer{
-
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 700;
 font-size: 1.8vw;
 line-height: 34px;
@@ -161,24 +182,63 @@ letter-spacing: 0.05em;
 color: #183153;
 }
 .apply{
+    /* margin-top: 30px; */
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 40px;
-gap: 10px;
-
-width: 140px;
-height: 40px;
-
-background: #146EBE;
-border-radius: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 10px;
+    height: 30px;
+    width: fit-content;
+    background: #146EBE;
+    border-radius: 20px;
+}
+.apply p{
+    font-size: .8vw;
+}
+.apply img{
+    height: 10px;
 }
 
 
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .form-inline{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .rulebookButton{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .navbar-brand{
+        margin-left: auto;
+    }   
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .mainHead{
+        font-size: 6vw;
+    }
+    .heroSec{
+        margin: 0 40px 0 40px;
+    }
+    .mainHeadSub{
+        font-size: 2vw;
+    }
+    .apply p,.heroBtn p{
+        font-size: 1.5vw;
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .navB{
+    .navB,.timer{
         font-size: 18px;
     }
     .logoSub{
@@ -199,10 +259,25 @@ border-radius: 20px;
         display: none;
     }
     p{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .heroChild2{
+        display: none;
+    }
+    .heroChild1{
+        width : 100%;
+    }
+    .mainHead{
+        font-size: 8vw;
+    }
+    .mainHeadSub{
+        font-size: 2.5vw;
+    }
+    .apply p,.heroBtn p{
+        font-size: 10px;
     }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 420px){
     .rulebookButton{
         padding: 10px 32px;
         gap: 12px;    
@@ -210,32 +285,27 @@ border-radius: 20px;
         height: 32px;
         font-weight: 100;
     }
-    p{
+    .timer{
+        font-size: 14px;
+    }
+    .mainHead{
+        font-size: 12vw;
+    }
+    .heroSec{
+        margin: 0 25px 0 25px;
+    }
+    .apply p,.heroBtn p,p{
         font-size: 10px;
     }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-/* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
-    .form-inline{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .rulebookButton{
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
-    }
-    .navbar-brand{
-        margin-left: auto;
-    }   
-    .navbar-nav .nav-item{
-        text-align: center;
+@media only screen and (min-width: 992px) {
+    .navbar{
+        padding-left: 50px;
+        padding-right: 50px;
+        /* height: 60px; */
     }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
