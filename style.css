@@ -162,8 +162,9 @@ p{
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
 #timeline{
-    background-color: var(--light-blue);
+    background-color: white;
     padding: 0px 16px;
+    margin-top: 55px; /*temp*/
 }
 #timeline>div{    
     max-width: clamp(1180px, calc(100vw - 40px), 288px);    
@@ -199,14 +200,20 @@ p{
     justify-content: space-between;
     align-items: stretch;
     width: 60%;
+    padding: 0px, 20px;
 }
 
 .tl>div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.tl-line{
+    position: relative;
+    left: 0px;
 }
 
 .tl-card{
