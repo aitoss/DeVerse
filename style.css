@@ -24,7 +24,7 @@ p{
     box-shadow: 0px 4px 20px rgba(7, 83, 116, 0.05);
 }
 .navbar-nav{
-    margin-right: 30px;
+    margin-right: 10px;
 }
 .nav-link,.logoSub,.navbar-brand{
     margin-right: 8px;
@@ -62,24 +62,83 @@ p{
     gap: 12px;
 
     width: 140px;
-    height: 40px;
+    height: 36px;
 
     background: #183153;
     border-radius: 20px;
     font-weight: 100;
     border: none;
 }
+.navbar-toggler-icon{
+    display :contents;
+}
+.rulebookButton img{
+    height: 12px;
+}
+
 
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .navB{
+        font-size: 18px;
+    }
+    .logoSub{
+        font-size: 12px;
+    }
+    .navbar-toggler-icon img{
+        height: 15px;
+    }
+    .rulebookButton{
+        padding: 12px 35px;
+        gap: 12px;    
+        width: 120px;
+        height: 35px;
+        font-weight: 100;
+    }
+    .rulebookButton img{
+        height: 8px;
+        display: none;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .rulebookButton{
+        padding: 10px 32px;
+        gap: 12px;    
+        width: 80px;
+        height: 32px;
+        font-weight: 100;
+    }
+    p{
+        font-size: 10px;
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .form-inline{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .rulebookButton{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .navbar-brand{
+        margin-left: auto;
+    }   
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
