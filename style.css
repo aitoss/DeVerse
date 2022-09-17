@@ -398,16 +398,36 @@ color: #183153;
     color: var(--dark-content);
 }
 
+@media only screen and (max-width: 1080px) {
+    .tl{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tl-vector{
+        display: none;
+    }
+    .tl{
+        width: 55%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+}
+
 /* ---------------------------------------------------------------------------Timeline Section Ends */
 /* ------------------------------------------------------------------------prize section */
 .prize-section{
     background: #F5FCFF;
     padding: 16px 16px;
     margin-top: 55px;
+
 }
 .prize-box-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap; 
     align-content:space-between; 
     max-width: 1175px;
@@ -423,7 +443,6 @@ color: #183153;
 }
 
 .prize-box{
-    position: relative;
     width: 340px;
     height: 400px;
     border: 2px solid #222;
