@@ -320,11 +320,8 @@ color: #183153;
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-<<<<<<< HEAD
-#timeline, .prize-section>div{    
-=======
-#timeline, .prize-section, .Mentors>div{    
->>>>>>> be41399cf98a811e6757d64685211d52241ba753
+#timeline, .prize-section, .Mentors, #experts>div{    
+
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
@@ -454,7 +451,7 @@ color: #183153;
 }
 /* ------------------------------------------------------------------------prize section End*/
 
-<<<<<<< HEAD
+
 /*--------------Judges section starts----------------*/
 #experts{
     background-color:#F5FCFF;
@@ -463,7 +460,7 @@ color: #183153;
 }
 .name{
     text-align: center;
-=======
+}
 /*-----------------------------------Mentors section -----------------*/
 .row{
     padding-left: 5%;
@@ -482,5 +479,5 @@ color: #183153;
     font-style: normal;
     text-align: center;
     color: #183153;
->>>>>>> be41399cf98a811e6757d64685211d52241ba753
+
 }
