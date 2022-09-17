@@ -402,14 +402,17 @@ color: #183153;
 /* ------------------------------------------------------------------------prize section */
 .prize-section{
     background: #F5FCFF;
+    padding: 16px 16px;
+    margin-top: 55px;
 }
 .prize-box-wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
-    align-content: space-around; 
+    align-content:space-between; 
     max-width: 1175px;
-    align-content: space-around;
+    align-items: space-between;
+   
 }
  
 .img_p{
@@ -435,6 +438,8 @@ color: #183153;
     font-style: normal;
     text-align: center;
     transition: all 500ms ease-in-out;
+    margin-top: 40px;
+    
 }
 /* transition in price section */
 .prize-box:hover{
