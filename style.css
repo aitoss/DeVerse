@@ -402,10 +402,10 @@ color: #183153;
 /* ------------------------------------------------------------------------prize section */
 .prize-section{
     background: #F5FCFF;
-    padding: 16px 16px;
-    margin-top: 55px;
+    margin-top: 55px; 
 }
 .prize-box-wrapper{
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
@@ -414,7 +414,7 @@ color: #183153;
     align-items: space-between;
    
 }
- 
+
 .img_p{
     height: 320px;
     width: 272px;
@@ -423,6 +423,7 @@ color: #183153;
 }
 
 .prize-box{
+    margin-top: 30px;
     position: relative;
     width: 340px;
     height: 400px;
@@ -438,7 +439,7 @@ color: #183153;
     font-style: normal;
     text-align: center;
     transition: all 500ms ease-in-out;
-    margin-top: 40px;
+
     
 }
 /* transition in price section */
