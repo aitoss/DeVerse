@@ -408,20 +408,6 @@ color: #183153;
     flex-wrap: wrap;
 }
 
-.tl-svg{
-    position: absolute;   
-    z-index: -1;
-    top: calc(324px+100vh+80px);
-    background-color: var(--primary-blue);
-}
-
-.tl-crv{
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-}
-
 .tl-card{
     margin: 10px 10px;
     display: flex;
@@ -444,6 +430,27 @@ color: #183153;
     color: var(--dark-content);
 }
 
+.tl-svg{
+    position: absolute;   
+    z-index: -1;
+    top: calc(324px+100vh+80px);
+    background-color: var(--primary-blue);
+}
+
+.tl-crv{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.tl-v-svg{
+    display: none;
+}
+.tl-v-line{
+    display: none;
+}
+
 @media only screen and (max-width: 1080px) {
     .tl{
         width: 45%;
@@ -460,7 +467,34 @@ color: #183153;
 }
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    
+    .tl-card{
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+    .tl>div{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .tl-img{
+        transform: scale(60%, 60%);
+    }
+    .tl-svg{
+        display: none !important;
+    }
+    .tl-crv{
+        display: none !important;
+    }
+    .tl-v-svg{
+        display: block;
+        background-color: var(--primary-blue);
+        position: absolute;
+    }
+    .tl-v-line{
+        display: inline;
+    }
 }
 
 /* ---------------------------------------------------------------------------Timeline Section Ends */
