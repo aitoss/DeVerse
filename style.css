@@ -315,12 +315,12 @@ color: #183153;
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline, .prize-section{
+#timeline, .prize-section, .Mentors{
     background-color: white;
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline, .prize-section>div{    
+#timeline, .prize-section, .Mentors>div{    
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
@@ -448,3 +448,23 @@ color: #183153;
     
 }
 /* ------------------------------------------------------------------------prize section End*/
+
+/*-----------------------------------Mentors section -----------------*/
+.row{
+    padding-left: 5%;
+    display: flex;  
+}
+    
+.col{
+    justify-content: center;
+    align-content: center;
+}
+.judgePic{
+    padding-left: 6%;
+}
+.name{
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #183153;
+}
