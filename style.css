@@ -750,7 +750,7 @@ canvas{
     align-content: center;
 }
 .judgePic{
-    padding-left: 6%;
+    padding-left: -5%;
 }
 .name{
     font-family: 'Poppins';
