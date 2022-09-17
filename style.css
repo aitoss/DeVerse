@@ -359,11 +359,11 @@ color: #183153;
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline, .prize-section, .Mentors{
+#timeline, .prize-section, .Mentors, .tracks-section{
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline, .prize-section, .Mentors, #experts>div{    
+#timeline, .prize-section, .Mentors, #experts, .tracks-section>div{    
 
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
@@ -513,6 +513,213 @@ color: #183153;
     
 }
 /* ------------------------------------------------------------------------prize section End*/
+
+/* ------------------------------------------------------------------------tracks start */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+
+    backdrop-filter: blur(2px);
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+
+    max-width: 353.33px;
+    height: 308px;
+
+    /* BG Shade */
+
+    background: #F5FCFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.sectiontitle {
+    /* Section Title */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 305.33px;
+    height: 230px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.strategy {
+    /* Strategy & Direction */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.content {
+    /* Content */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 305.33px;
+    height: 146px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content1 {
+    width: 305.33px;
+    height: 34px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+
+    /* headings */
+
+    color: #183153;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content2 {
+    width: 305.33px;
+    height: 96px;
+
+    /* Body 02 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    color: #1C1E53;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.branding {
+    /* Branding & Logo */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ui {
+    /* UI & UX Design */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* ------------------------------------------------------------------------tracks start */
 
 canvas{ 
     position: absolute;
