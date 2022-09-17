@@ -7,20 +7,23 @@
     <title>De'Verse</title>
 
     <!-- bootstrap links -->
-
+<!-- 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+ -->
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- font awesome links -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body onresize="tlLines()">
+<body>
     
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-fixed-top" style="background-color: #FFFFFF;color: #183153;">
@@ -60,17 +63,17 @@
       <!-- Navbar End -->
 
     <!-- hero section start -->
-
-    <div class="hero">
+  <div id="particles-jss">
+    <div class="hero" id = "particles-js">
       <div class="heroSec">
         <div class="heroChild1">
           <div class="mainHead"><b>De’Verse</b></div>
-          <div class="mainHeadSub">Collaborate | Contribute | Create</div>
+          <div class="mainHeadSub"><h1>Collaborate | Contribute | Create </h1></div>
           <p>AIT <span class="colP">OSS Club</span> presents <span class="colP">De’Verse</span>, this year's first event.
             Exclusive for AIT students, this event is a platform for students to learn new skillset and tech-stacks under the guidance of our experienced mentors.
             </p>
             <div class="heroBtn">
-              <p style="">Registration Closes in</p>
+              <p>Registration Closes in</p>
               <div class="timer">69:69:69</div>
               <div class="apply"><p style="white-space:nowrap; color: #ffffff;">Apply Now</p><img src="images/icons/Vector.png"></div>
               <div class="register"></div>
@@ -79,8 +82,10 @@
         <div class="heroChild2"><img src="images/vectors/Database.png"></div>
       </div>
     </div>
+  </div>
     <!-- hero section end -->
-    <!-- Timeline Section Start -->
+
+    <!-- Timeline Section Start
     <section id="timeline">
       <div>
 
@@ -106,6 +111,7 @@
                   <img src="images/vectors/timeline-pin.svg" alt="X">
                 </div>
               </div>
+              <img src="images/vectors/timeline-line.svg" alt="" class="tl-line">
               <div class="tl-card">
                 <div class="tl-card-content">
                   <div class="tl-date">20 Sept. 2022</div>
@@ -159,51 +165,41 @@
               </div>
             </div>
 
-            <div class="tl-svg"><svg class="tl-line" width="500" height="4" viewBox="0 0 500 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            </svg></div>
-            <div class="tl-svg"><svg class="tl-line" width="500" height="4" viewBox="0 0 500 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            </svg></div>
-            <div class="tl-svg"><svg class="tl-line" width="500" height="4" viewBox="0 0 500 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            </svg></div>
-            <div class="tl-crv">
-              <svg width="114" height="213" viewBox="0 0 114 213" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M113.676 2L105.183 2C97.7496 2 90.3381 2.80595 83.0784 4.40373V4.40373C-15.9303 26.1944 -27.0136 162.955 67.1942 200.404L75.4146 203.672C87.6934 208.553 100.787 211.06 114 211.06V211.06" stroke="#183153" stroke-width="3"/>
-                </svg>
-            </div>
-            <div class="tl-crv">
-              <svg width="142" height="213" viewBox="0 0 142 213" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.82373 1.94531L37.6703 1.94531C61.4746 1.94531 84.5326 10.2528 102.867 25.4348V25.4348C149.674 64.1943 152.532 134.987 109 177.393L105.535 180.768C85.636 200.152 58.9536 211 31.1731 211H0.5" stroke="#183153" stroke-width="3"/>
-              </svg>
-            </div>
+
           </div>
-
         </div>
       </div>      
     </section>
     <!-- Timeline Section End -->
-    <!-- prize section -->
+    <!-- prize section
     <section class="prize-section">
       <div>
         <div class="section-heading">
           <div class="section-txt"> Money Stuff </div>
           <div class="section-title"> Prizes </div>
         </div>
-        <div class="prize-box-wrapper">            
-          <div class="prize-box first-p">
-            <img class="img_p" src="images/prizes_images/1st_prize.svg" alt="">
-          </div>
-          <div class="prize-box sec-p">
-            <img class="img_p" src="images/prizes_images/2nd_prize.svg" alt="">                
-          </div>
-          <div class="prize-box third-p">
-            <img  class="img_p"src="images/prizes_images/3rd_prize.svg" alt="">              
-          </div>
+        <div class="prize-box-wrapper">
+            
+                <div class="prize-box first-p">
+                <img class="img_p" src="images/prizes_images/1st_prize.svg" alt="">
+                </div>
+                <div class="prize-box sec-p">
+              <img class="img_p" src="images/prizes_images/2nd_prize.svg" alt="">
+                
+                </div>
+                <div class="prize-box third-p">
+              <img  class="img_p"src="images/prizes_images/3rd_prize.svg" alt="">
+              
+                </div>
         </div>
       </div>
-    </section>
+  </section>
     <!-- prize section End -->
 
+    <!-- patricle library -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
+    <script src="particle.js"></script>
 
 </body>
 </html>
