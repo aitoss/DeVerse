@@ -320,7 +320,7 @@ color: #183153;
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline, .prize-section>div{    
+#timeline, .prize-section, #experts>div{    
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
@@ -448,3 +448,13 @@ color: #183153;
     
 }
 /* ------------------------------------------------------------------------prize section End*/
+
+/*--------------Judges section starts----------------*/
+#experts{
+    background-color:#F5FCFF;
+    padding: 16px 16px;
+    margin-top: 55px; 
+}
+.name{
+    text-align: center;
+}
