@@ -315,12 +315,16 @@ color: #183153;
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline, .prize-section{
+#timeline, .prize-section, .Mentors{
     background-color: white;
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline, .prize-section, #experts>div{    
+<<<<<<< HEAD
+#timeline, .prize-section>div{    
+=======
+#timeline, .prize-section, .Mentors>div{    
+>>>>>>> be41399cf98a811e6757d64685211d52241ba753
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
@@ -402,10 +406,10 @@ color: #183153;
 /* ------------------------------------------------------------------------prize section */
 .prize-section{
     background: #F5FCFF;
-    padding: 16px 16px;
-    margin-top: 55px;
+    margin-top: 55px; 
 }
 .prize-box-wrapper{
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
@@ -414,7 +418,7 @@ color: #183153;
     align-items: space-between;
    
 }
- 
+
 .img_p{
     height: 320px;
     width: 272px;
@@ -423,6 +427,7 @@ color: #183153;
 }
 
 .prize-box{
+    margin-top: 30px;
     position: relative;
     width: 340px;
     height: 400px;
@@ -438,7 +443,7 @@ color: #183153;
     font-style: normal;
     text-align: center;
     transition: all 500ms ease-in-out;
-    margin-top: 40px;
+
     
 }
 /* transition in price section */
@@ -449,6 +454,7 @@ color: #183153;
 }
 /* ------------------------------------------------------------------------prize section End*/
 
+<<<<<<< HEAD
 /*--------------Judges section starts----------------*/
 #experts{
     background-color:#F5FCFF;
@@ -457,4 +463,24 @@ color: #183153;
 }
 .name{
     text-align: center;
+=======
+/*-----------------------------------Mentors section -----------------*/
+.row{
+    padding-left: 5%;
+    display: flex;  
+}
+    
+.col{
+    justify-content: center;
+    align-content: center;
+}
+.judgePic{
+    padding-left: 6%;
+}
+.name{
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #183153;
+>>>>>>> be41399cf98a811e6757d64685211d52241ba753
 }
