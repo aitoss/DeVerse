@@ -358,12 +358,12 @@ color: #183153;
 
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 
-#timeline, .prize-section{
-    background-color: white;
+#timeline, .prize-section, .Mentors{
     padding: 16px 16px;
     margin-top: 55px; /*temp*/
 }
-#timeline, .prize-section>div{    
+#timeline, .prize-section, .Mentors, #experts>div{    
+
     max-width: clamp(1180px, calc(100vw - 40px), 288px);
     margin: auto auto;
     display: flex;
@@ -409,12 +409,14 @@ color: #183153;
 
 .tl-svg{
     position: absolute;   
+    z-index: -1;
     top: calc(324px+100vh+80px);
     background-color: var(--primary-blue);
 }
 
 .tl-crv{
     position: absolute;
+    z-index: -1;
     left: 0;
     top: 0;
 }
@@ -441,25 +443,72 @@ color: #183153;
     color: var(--dark-content);
 }
 
+@media only screen and (max-width: 1080px) {
+    .tl{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tl-vector{
+        display: none;
+    }
+    .tl{
+        width: 55%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+}
+
 /* ---------------------------------------------------------------------------Timeline Section Ends */
 /* ------------------------------------------------------------------------prize section */
 .prize-section{
     background: #F5FCFF;
 }
 .prize-box-wrapper{
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap; 
-    align-content: space-around;
-    padding: 0px;
+    align-content:space-between; 
     max-width: 1175px;
-    align-content: space-around;
-    margin: auto auto;
+    align-items: space-between;
+   
 }
 
 .img_p{
+    height: 320px;
+    width: 272px;
+    margin-top: 70px;
+    margin-right: 60px;
+}
+
+.prize-box{
+    margin-top: 30px;
+    width: 340px;
     height: 400px;
-    width: 370px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: #183153;
+    box-shadow: 4px 4px 4px 4px rgba(24, 49, 83, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+
+    
+}
+/* transition in price section */
+.prize-box:hover{
+    box-shadow: 6px 6px 14px #06315e;
+    transform: translateX(2px);
+    
 }
 /* ------------------------------------------------------------------------prize section End*/
 
@@ -469,3 +518,35 @@ canvas{
     left: 0;
     z-index: -1;
 } 
+
+
+
+/*--------------Judges section starts----------------*/
+#experts{
+    background-color:#F5FCFF;
+    padding: 16px 16px;
+    margin-top: 55px; 
+}
+.name{
+    text-align: center;
+}
+/*-----------------------------------Mentors section -----------------*/
+.row{
+    padding-left: 5%;
+    display: flex;  
+}
+    
+.col{
+    justify-content: center;
+    align-content: center;
+}
+.judgePic{
+    padding-left: 6%;
+}
+.name{
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #183153;
+
+}
