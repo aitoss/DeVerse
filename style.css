@@ -405,17 +405,41 @@ color: #183153;
 }
 .prize-box-wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap; 
-    align-content: space-around;
-    padding: 0px;
+    align-content: space-around; 
     max-width: 1175px;
     align-content: space-around;
-    margin: auto auto;
+}
+ 
+.img_p{
+    height: 320px;
+    width: 272px;
+    margin-top: 70px;
+    margin-right: 60px;
 }
 
-.img_p{
+.prize-box{
+    position: relative;
+    width: 340px;
     height: 400px;
-    width: 370px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: #183153;
+    box-shadow: 4px 4px 4px 4px rgba(24, 49, 83, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+/* transition in price section */
+.prize-box:hover{
+    box-shadow: 6px 6px 14px #06315e;
+    transform: translateX(2px);
+    
 }
 /* ------------------------------------------------------------------------prize section End*/
