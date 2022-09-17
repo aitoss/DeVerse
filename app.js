@@ -1,8 +1,8 @@
 for(i = 0; i< 2; i++){    
     var pins = document.querySelectorAll(".tl-img")
     var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
-    var lineX = pins[0].getBoundingClientRect().left + 165
-    var curveX = pins[0].getBoundingClientRect().left - 40
+    var lineX = pins[0].getBoundingClientRect().left + 91
+    var curveX = pins[0].getBoundingClientRect().left - 110
     var lineY = 273 + window.innerHeight
     var curveY = lineY + 1
 
@@ -11,7 +11,7 @@ for(i = 0; i< 2; i++){
             curves[index].style.left = `${curveX}px`
             curves[index].style.top = `${curveY}px`
             curveY += 216
-            curveX += lineWidth + 295
+            curveX += lineWidth + 290
         })
     var lines = document.querySelectorAll(".tl-line")
         lines.forEach(function(item, index){
