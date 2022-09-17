@@ -1,0 +1,24 @@
+:root{
+    --primary-blue: #183153;
+    --secondary-blue: #E9F5FF;
+    --light-blue: #F5FCFF;
+    --dark-content: #333333;
+}
+
+.section-blue{
+    background-color: var(--light-blue);
+}
+.section-white{
+    background-color: white;
+}
+.section-txt{
+    font-weight: 500px;
+    font-size: 18px;
+    color: var(--primary-blue);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--primary-blue);
+}
