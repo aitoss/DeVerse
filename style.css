@@ -43,6 +43,7 @@ color: #6E6E6E;
 }
 .navbar-nav{
     margin-right: 10px;
+    margin-left: auto;
 }
 .nav-link,.logoSub,.navbar-brand{
     margin-right: 8px;
