@@ -243,11 +243,15 @@ color: #6E6E6E;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .mentor-img img{
     max-width: 65%;
     height: auto;
     /* margin: auto auto; */
+}
+.vector{
+    position: absolute;
 }
 .mcard{
     display: flex;
