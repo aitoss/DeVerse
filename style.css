@@ -127,18 +127,7 @@ color: #6E6E6E;
 }
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    .mainHead{
-        font-size: 6vw;
-    }
-    .heroSec{
-        margin: 0 40px 0 40px;
-    }
-    .mainHeadSub h1{
-        font-size: 2vw;
-    }
-    .apply p,.heroBtn p{
-        font-size: 1.5vw;
-    }
+   
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -162,24 +151,6 @@ color: #6E6E6E;
         height: 8px;
         display: none;
     }
-    p{
-        font-size: 10px;
-    }
-    .heroChild2{
-        display: none;
-    }
-    .heroChild1{
-        width : 100%;
-    }
-    .mainHead{
-        font-size: 8vw;
-    }
-    .mainHeadSub h1{
-        font-size: 2.5vw;
-    }
-    .apply p,.heroBtn p{
-        font-size: 10px;
-    }
 }
 @media only screen and (max-width: 420px){
     .rulebookButton{
@@ -188,31 +159,6 @@ color: #6E6E6E;
         width: 80px;
         height: 32px;
         font-weight: 100;
-    }
-    .timer{
-        font-size: 15px;
-    }
-    .heroChild1{
-        display: flex;
-        padding-right: 0;
-        flex-direction: column;
-    }
-    .heroBtn{
-        margin-top: 40px;
-        gap: 4px;
-        padding-right: 20px;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .mainHead{
-        font-size: 12vw;
-    }
-    .heroSec{
-        margin: 0 25px 0 25px;
-    }
-    .apply p,.heroBtn p,p{
-        font-size: 10px;
     }
 }
 @media only screen and (min-width: 992px) {
