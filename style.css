@@ -13,6 +13,7 @@
     --secondary-blue: #E9F5FF;
     --light-blue: #F5FCFF;
     --dark-content: #333333;
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
@@ -436,6 +437,7 @@ border-radius: 20px;
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
 }
 
+
 .mid-foot{
     /* padding-bottom:10px; */
     margin-bottom: 80px;
@@ -446,5 +448,18 @@ border-radius: 20px;
     align-items: center;
     justify-content: space-evenly;
 }
+#footer{
+    background-color: rgba(193, 219, 248, 1);
+}
+
+.foot-items p{
+    font-size: 120%;
+}
+.left-foot span{
+    font-weight: bold;
+
+}
+
+
 
 /* Footer ends */
