@@ -288,8 +288,106 @@ border-radius: 20px;
     font-size: 50px;
     color: var(--primary-blue);
 }
+/*----------------------- prize section  --------------------------*/
+.prize-box{
+   
+    width: 306px;
+    height: 360px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: #183153;
+    box-shadow: 4px 4px 4px 4px rgba(24, 49, 83, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    transition: all 800ms ease-in-out;
+}
+.prizeamount{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    padding-top: 50px;
+}
+.p_rank{
+    font-size: 150px;
+    margin-bottom: 80px;
+    color: var(--primary-blue);
+}
+.img_p{
+    width: 140px;
+    height: 240px;
+    margin-top: 35px;
+}
+.p_st{
+    margin-bottom: 110px;
+    font-size: 35px;
+    font-weight: 600px;
+    color: var(--primary-blue);
+}
 
+/* transition in price section */
+.prize-box:hover{
+    box-shadow: 6px 6px 6px 6px #3a3a3b;
+    transform: translate(2px);
+}
+/*----------------------- prize section  --------------------------*/
 
+/*--------------------- Tracks starts------------------------------- */
+.tracks-content{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; */
+    /* padding: 0px 40px; */
+    /* gap: 40px; */
+}
+
+.main-box{
+    background: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.inner-content{
+    display: flex;
+    flex-direction: column;
+}
+.track1, .track2, .track3{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} 
+
+.symbol{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    gap: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.inner-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/*--------------------- Tracks end---------------------------------- */
 
 /*--------------------Judges and mentors-----------------------------*/
 .mentor-img{
@@ -332,9 +430,13 @@ border-radius: 20px;
     display: flex;
     flex-direction: row;
     color: white;
-    height: 205px;
+    height: 272px;
     align-items: center;
     justify-content: space-evenly;
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+}
+
+.mid-foot{
+    background-color: ;
 }
 /* Footer ends */
