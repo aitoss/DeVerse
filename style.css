@@ -26,7 +26,12 @@
     color: var(--primary-blue);
 }
 
-
+/*--------------------- Tracks starts------------------------------- */
+.tracks-content{
+    display: flex;
+    justify-content: center;
+}
+/*--------------------- Tracks end---------------------------------- */
 
 /*--------------------Judges and mentors-----------------------------*/
 .mentor-img{
