@@ -205,7 +205,20 @@ color: #6E6E6E;
 /*--------------------- Tracks starts------------------------------- */
 .tracks-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.main-box{
+    background: var(--light-blue);
+    padding: 0px 20px;
+    gap: 40px;
+}
+
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 /*--------------------- Tracks end---------------------------------- */
 
