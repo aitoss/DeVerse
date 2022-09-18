@@ -15,6 +15,16 @@
     --dark-content: #333333;
 }
 
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .container{
+        padding: 0 10%;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+
 p{
     /* font-family: 'Poppins';
     font-style: normal;
@@ -106,6 +116,29 @@ color: #6E6E6E;
     /* align-items: center; */
     height: 100vh;
 }
+.heroContent h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+
+    color: #183153;
+}
+.heroContent p{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #183153;
+}
+.heroContent .section-txt{
+    margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #183153;
+}
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
@@ -113,6 +146,11 @@ color: #6E6E6E;
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .herow{
+        padding-top: 80px;
+        height: 100%;
+        gap: 60px;
     }
     .rulebookButton{
         border-bottom-left-radius: 0px;
@@ -159,6 +197,10 @@ color: #6E6E6E;
         width: 80px;
         height: 32px;
         font-weight: 100;
+    }
+    .heroContent h1{
+        font-size: 50px;
+        line-height: 80px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -227,11 +269,15 @@ color: #6E6E6E;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .mentor-img img{
     max-width: 65%;
     height: auto;
     /* margin: auto auto; */
+}
+.vector{
+    position: absolute;
 }
 .mcard{
     display: flex;
