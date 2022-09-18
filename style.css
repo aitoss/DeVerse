@@ -400,12 +400,26 @@ border-radius: 20px;
     max-width: 143px;
     height: auto;
     margin: auto auto;
+    z-index: 4;
 }
 
+@keyframes mentor-rotate{
+  100%{transform: rotate(20deg);}
+}
+@keyframes mentor-expand {
+   100%{transform: scale(120%,120%);}
+}
 
 .mentorImg{
     position: absolute;
     max-width: 225px;
+    z-index: 2;
+}
+.mentorImg:hover{
+    animation: mentor-expand 0.7s, mentor-rotate 0.7s;
+    /* animation-name: mentor-rotate;
+    animation-name: mentor-expand;
+    animation-duration: 0.7s; */
 }
 .mcard{
     display: flex;
