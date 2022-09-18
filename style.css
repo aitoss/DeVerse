@@ -119,7 +119,7 @@ color: #6E6E6E;
 .heroContent h1{
     font-weight: 700;
     font-size: 70px;
-    line-height: 105px;
+    line-height: 80px;
     letter-spacing: 0.02em;
 
     color: #183153;
@@ -127,9 +127,17 @@ color: #6E6E6E;
 .heroContent p{
     font-weight: 400;
     font-size: 25px;
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 0.01em;
     color: #183153;
+}
+.heroContent .section-txt{
+    margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #183153;
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
