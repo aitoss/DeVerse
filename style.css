@@ -298,13 +298,16 @@ border-radius: 20px;
     justify-content: center;
     position: relative;
 }
-.mentor-img img{
-    max-width: 65%;
+.mentorImg2{
+    max-width: 143px;
     height: auto;
-    /* margin: auto auto; */
+    margin: auto auto;
 }
-.vector{
+
+
+.mentorImg{
     position: absolute;
+    max-width: 225px;
 }
 .mcard{
     display: flex;
