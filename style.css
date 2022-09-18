@@ -27,6 +27,36 @@
 }
 
 
+
+/*--------------------Judges and mentors-----------------------------*/
+.mentor-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mentor-img img{
+    max-width: 65%;
+    height: auto;
+    /* margin: auto auto; */
+}
+.mcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mentorRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.name{
+    text-align: center;
+    color: #183153;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 /* Footer start */
 .foot-items{
     display: flex;
