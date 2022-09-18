@@ -231,3 +231,70 @@ color: #6E6E6E;
         height: 60px;
     }
 }
+
+
+
+
+.section-blue{
+    background-color: var(--light-blue);
+}
+.section-dark-blue{
+    background-color: var(--primary-blue);
+}
+.section-white{
+    background-color: white;
+}
+.section-txt{
+    font-weight: 500px;
+    font-size: 18px;
+    color: var(--primary-blue);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--primary-blue);
+}
+
+
+
+/*--------------------Judges and mentors-----------------------------*/
+.mentor-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mentor-img img{
+    max-width: 65%;
+    height: auto;
+    /* margin: auto auto; */
+}
+.mcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mentorRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.name{
+    text-align: center;
+    color: #183153;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Footer start */
+.foot-items{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 205px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+}
+/* Footer ends */
