@@ -13,6 +13,7 @@
     --secondary-blue: #E9F5FF;
     --light-blue: #F5FCFF;
     --dark-content: #333333;
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
@@ -119,7 +120,7 @@ color: #6E6E6E;
 .heroContent h1{
     font-weight: 700;
     font-size: 70px;
-    line-height: 80px;
+    line-height: 70px;
     letter-spacing: 0.02em;
 
     color: #183153;
@@ -150,8 +151,11 @@ box-shadow: 0px 0px 10px rgba(235, 244, 252, 0.25);
 border-radius: 20px;
 }
 .applyNow{
-    margin:24px;
+    margin:10px 10px 10px 20px;
+    padding: 12px 24px;
     display: flex;
+    border-radius: 20px;
+    background-color: #146EBE;
     flex-direction: row;
     align-items: center;
 }
@@ -208,6 +212,21 @@ border-radius: 20px;
     .herow{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .heroBox{
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        padding-top: 10px;
+    }
+    .heroBox p{
+        font-size: 50px;
+        padding: 20px 20px 10px 20px;
+    }
+    .heroBox .section-txt{
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 10px;
     }
 }
 @media only screen and (max-width: 420px){
@@ -270,12 +289,14 @@ border-radius: 20px;
 
 .section-blue{
     background-color: var(--light-blue);
+    z-index: -10;
 }
 .section-dark-blue{
     background-color: var(--primary-blue);
 }
 .section-white{
     background-color: white;
+    z-index: -10;
 }
 .section-txt{
     font-weight: 500px;
@@ -288,6 +309,133 @@ border-radius: 20px;
     font-size: 50px;
     color: var(--primary-blue);
 }
+
+
+/* ---------------------------------------------------------------------------Timeline Section Starts */
+.tl-container{
+    z-index: -5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 50%;
+    padding: 0px, 70px;
+}
+
+.tl-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tl-card{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tl-date{
+    font-weight: bold;
+    color: var(--primary-blue);
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.tl-img{
+    margin-top: 7px;
+}
+.tl-event{
+    font-weight: 500px;
+    font-size: 18px;
+    color: var(--dark-content);
+}
+
+.tl-svg{
+    position: absolute;
+    top: calc(324px+100vh+80px);
+    background-color: var(--primary-blue);
+    height: 3px;
+    width: 0px;
+}
+
+.tl-crv{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tl-v-svg{
+    display: none;
+}
+.tl-v-line{
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .tl{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tl-vector{
+        display: none;
+    }
+    .tl{
+        width: 55%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .tl-card{
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+    .tl-row{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .tl-img{
+        transform: scale(60%, 60%);
+        z-index: -1;
+    }
+    .tl-svg{
+        display: none !important;
+    }
+    .tl-crv{
+        display: none !important;
+    }
+    .tl-v-svg{
+        display: block;
+        background-color: var(--primary-blue);
+        position: absolute;
+        height: 96px;
+        width: 3px;
+        z-index: -1;
+    }
+    .tl-v-line{
+        display: inline;
+    }
+}
+
+/* ---------------------------------------------------------------------------Timeline Section Ends */
+
+
+
+
+
 /*----------------------- prize section  --------------------------*/
 .prize-box{
    
@@ -450,7 +598,29 @@ border-radius: 20px;
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
 }
 
+
 .mid-foot{
-    background-color: ;
+    /* padding-bottom:10px; */
+    margin-bottom: 80px;
 }
+.l-foot-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer{
+    background-color: rgba(193, 219, 248, 1);
+}
+
+.foot-items p{
+    font-size: 120%;
+}
+.left-foot span{
+    font-weight: bold;
+
+}
+
+
+
 /* Footer ends */
