@@ -44,7 +44,7 @@ function tlLines(){
     var curveX = pins[0].getBoundingClientRect().left - 110
     var lineY = 273 + window.innerHeight    
     var VlineX = pins[0].getBoundingClientRect().left + 26.7
-    var VlineY = window.innerHeight + 210
+    var VlineY = pins[0].getBoundingClientRect().top - document.getElementById("timeline").getBoundingClientRect().top + 814.5
     var curveY = lineY + 1
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
@@ -75,7 +75,6 @@ function tlLines(){
         v_line[index].style.left = `${VlineX}px`
         v_line[index].style.top = `${VlineY}px`
         v_line[index].style.height = `${lineHeight}px`
-
         VlineY += lineHeight + 56.4
     })
     // v_in_lines.forEach(function(item, index){
