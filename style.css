@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+:root{
+    --primary-blue: #183153;
+    --secondary-blue: #E9F5FF;
+    --light-blue: #F5FCFF;
+    --dark-content: #333333;
+}
+
+p{
+    /* font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    color: #6E6E6E; */
+font-weight: 400;
+font-size: 13px;
+line-height: 25px;
+letter-spacing: 0.02em;
+margin: 0;
+color: #6E6E6E;
+}
+
+
+/* -------------------------------------------------------------------------- hero page Codes Start */
+.navbar{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(7, 83, 116, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-nav{
+    margin-right: 10px;
+    margin-left: auto;
+}
+.nav-link,.logoSub,.navbar-brand{
+    margin-right: 8px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+.navbar-brand{
+    font-weight:bolder;
+    font-size: 25px;
+    color: var(--primary-blue);
+}
+.nav-link{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7F7F7F;
+}
+.logoSub{
+    margin-left: 3px;
+    font-size: 16px;
+    color: var(--primary-blue);
+}
+.navbar-toggler-icon img{
+    height: 23px;
+}
+
+.rulebookButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px;
+    gap: 12px;
+
+    width: 140px;
+    height: 36px;
+
+    background: var(--primary-blue);
+    border-radius: 20px;
+    font-weight: 100;
+    border: none;
+}
+.rulebookButton:hover{
+    background: #0F1F3D;
+}
+.navbar-toggler-icon{
+    display :contents;
+}
+.rulebookButton img{
+    height: 12px;
+}
+
+/* hero section */
+
+.body{
+    background: #F5FCFF;
+}
+.herow{
+    padding-top: 50px;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .form-inline{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .rulebookButton{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .navbar-brand{
+        margin-left: auto;
+    }   
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .mainHead{
+        font-size: 6vw;
+    }
+    .heroSec{
+        margin: 0 40px 0 40px;
+    }
+    .mainHeadSub h1{
+        font-size: 2vw;
+    }
+    .apply p,.heroBtn p{
+        font-size: 1.5vw;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navB,.timer{
+        font-size: 18px;
+    }
+    .logoSub{
+        font-size: 12px;
+    }
+    .navbar-toggler-icon img{
+        height: 15px;
+    }
+    .rulebookButton{
+        padding: 12px 35px;
+        gap: 12px;    
+        width: 120px;
+        height: 35px;
+        font-weight: 100;
+    }
+    .rulebookButton img{
+        height: 8px;
+        display: none;
+    }
+    p{
+        font-size: 10px;
+    }
+    .heroChild2{
+        display: none;
+    }
+    .heroChild1{
+        width : 100%;
+    }
+    .mainHead{
+        font-size: 8vw;
+    }
+    .mainHeadSub h1{
+        font-size: 2.5vw;
+    }
+    .apply p,.heroBtn p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 420px){
+    .rulebookButton{
+        padding: 10px 32px;
+        gap: 12px;    
+        width: 80px;
+        height: 32px;
+        font-weight: 100;
+    }
+    .timer{
+        font-size: 15px;
+    }
+    .heroChild1{
+        display: flex;
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .heroBtn{
+        margin-top: 40px;
+        gap: 4px;
+        padding-right: 20px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainHead{
+        font-size: 12vw;
+    }
+    .heroSec{
+        margin: 0 25px 0 25px;
+    }
+    .apply p,.heroBtn p,p{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar{
+        padding-left: 50px;
+        padding-right: 50px;
+        /* height: 60px; */
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar{
+        padding-left: 70px;
+        padding-right: 70px;
+        height: 60px;
+    }
+}
