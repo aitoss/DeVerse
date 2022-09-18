@@ -288,10 +288,7 @@ border-radius: 20px;
     font-size: 50px;
     color: var(--primary-blue);
 }
-/*------------------------- Prize section Start----------------------------*/
-
-<<<<<<< HEAD
-/*------------------------- Prize section End----------------------------*/
+/*----------------------- prize section  --------------------------*/
 .prize-box{
    
     width: 306px;
@@ -336,7 +333,8 @@ border-radius: 20px;
     box-shadow: 6px 6px 6px 6px #3a3a3b;
     transform: translate(2px);
 }
-=======
+/*----------------------- prize section  --------------------------*/
+
 /*--------------------- Tracks starts------------------------------- */
 .tracks-content{
     display: flex;
@@ -381,7 +379,6 @@ border-radius: 20px;
     border-radius: 8px;
 }
 
->>>>>>> abc96b94ccb78abc762064b64bb57db5f368bba5
 
 /*--------------------- Tracks end---------------------------------- */
 
