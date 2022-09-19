@@ -13,8 +13,38 @@
     --secondary-blue: #E9F5FF;
     --light-blue: #F5FCFF;
     --dark-content: #333333;
-    
+
+    --section-heading: clamp(2rem, 10vw, 3.125rem);
+    --content-heading: clamp(1.35rem, 3vw ,1.75rem);
+    --content-text: clamp(1rem, 1.8vw, 1.125rem)
 }
+
+.section-blue{
+    background-color: var(--light-blue);
+    z-index: -10;
+}
+.section-dark-blue{
+    background-color: var(--primary-blue);
+}
+.section-white{
+    background-color: white;
+    z-index: -10;
+}
+.section-txt{
+    font-weight: 700px;
+    /* font-size: 18px; */
+    font-size: var(--content-heading);
+    color: var(--primary-blue);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: var(--section-heading);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    color: var(--primary-blue);
+}
+
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
@@ -236,9 +266,6 @@ border-radius: 20px;
         font-weight: 400;
         padding-top: 10px;
     }
-    .section-title{
-        font-size: 32px;
-    }
 }
 @media only screen and (max-width: 420px){
     .rulebookButton{
@@ -296,35 +323,6 @@ border-radius: 20px;
     }
 }
 
-
-
-
-.section-blue{
-    background-color: var(--light-blue);
-    z-index: -10;
-}
-.section-dark-blue{
-    background-color: var(--primary-blue);
-}
-.section-white{
-    background-color: white;
-    z-index: -10;
-}
-.section-txt{
-    font-weight: 500px;
-    font-size: 18px;
-    color: var(--primary-blue);
-}
-
-.section-title{
-    font-weight: bold;
-    font-size: 50px;
-    letter-spacing: 0.02em;
-    margin-bottom: 10px;
-    color: var(--primary-blue);
-}
-
-
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 .tl-container{
     z-index: -100;
@@ -363,7 +361,7 @@ border-radius: 20px;
 .tl-date{
     font-weight: bold;
     color: var(--primary-blue);
-    font-size: 23px;
+    font-size: var(--content-heading);
     margin-bottom: 5px;
 }
 .tl-img{
@@ -371,7 +369,8 @@ border-radius: 20px;
 }
 .tl-event{
     font-weight: 500px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--content-text);
     color: var(--dark-content);
 }
 
@@ -408,7 +407,7 @@ border-radius: 20px;
         display: none;
     }
     .tl{
-        width: 55%;
+        width: 70%;
     }
 }
 /* Medium devices (landscape tablets, 768px and down) */
@@ -475,6 +474,7 @@ border-radius: 20px;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
+
 .prizeamount{
     font-size: 40px;
     font-weight: 600;
@@ -500,52 +500,47 @@ border-radius: 20px;
 
 /* transition in price section */
 .prize-box:hover{
-    box-shadow: 6px 6px 6px 6px #3a3a3b;
+    box-shadow: 6px 6px 6px 6px #18315389;
     transform: translate(2px);
 }
 @media screen and (max-width:992px){
-    .prize-box{
-        width: 271px;
-        height: 320px;
-    }
+   
     .prizeamount{
         font-size: 30px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 100px;
-        margin-bottom: 120px;
+        font-size: 120px;
+        margin-bottom: 90px;
     }
     .p_st{
-        margin-bottom: 145px;
+        margin-bottom: 120px;
     }
     .img_p{
-        height: 216px;
-        width: 126px;
+        height: 225px;
+        width: 145px;
         margin-top: 40px;
     }
 }
 @media screen and (max-width:400px){
     .prize-box{
-       
-        height: 270px;
-        padding: 0px;
+        height: 320px;
     }
     .prizeamount{
         font-size: 25px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 70px;
-        margin-bottom: 120px;
+        font-size: 110px;
+        margin-bottom: 60px;
     }
     .p_st{
-        margin-bottom: 138px;
+        margin-bottom: 90px;
     }
     .img_p{
         height: 200px;
         width: 120px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
 }
