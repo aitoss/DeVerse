@@ -19,6 +19,10 @@
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
     .container{
+        max-width: 100%;
+        padding: 0 10%;
+    }
+    .herocontainer{
         padding: 0 10%;
         margin: 0;
         max-width: 100%;
@@ -228,6 +232,9 @@ border-radius: 20px;
         font-weight: 400;
         padding-top: 10px;
     }
+    .section-title{
+        font-size: 32px;
+    }
 }
 @media only screen and (max-width: 420px){
     .rulebookButton{
@@ -307,6 +314,8 @@ border-radius: 20px;
 .section-title{
     font-weight: bold;
     font-size: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
     color: var(--primary-blue);
 }
 
@@ -497,14 +506,14 @@ border-radius: 20px;
 
 .main-box{
     background: var(--light-blue);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; */
     padding: 24px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
+/* inner-content is used in more than one place */
 .inner-content{
     display: flex;
     flex-direction: column;
@@ -516,18 +525,19 @@ border-radius: 20px;
 } 
 
 .symbol{
-    display: flex;
-    flex-direction: row;
-    justify-content:start;
-    align-items: center;
+    /* symbol is used in more than one place therfore is styled in css */
     width: 60px;
     height: 60px;
     padding: 10px;
-    gap: 10px;
-
     background: #FFFFFF;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    
+    /* display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center; */
+    /* gap: 10px; */
 }
 .inner-content p{
     font-weight: 400;
