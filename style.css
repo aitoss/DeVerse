@@ -475,9 +475,7 @@ border-radius: 20px;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
-.prizeRow{
-    margin-bottom: 20px;
-}
+
 .prizeamount{
     font-size: 40px;
     font-weight: 600;
@@ -531,8 +529,8 @@ border-radius: 20px;
 @media screen and (max-width:400px){
     .prize-box{
        
-        height: 270px;
-        padding: 0px;
+        height: 280px;
+    
     }
     .prizeamount{
         font-size: 25px;
