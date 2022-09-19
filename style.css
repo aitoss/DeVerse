@@ -474,9 +474,7 @@ border-radius: 20px;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
-.prizeRow{
-    margin-bottom: 20px;
-}
+
 .prizeamount{
     font-size: 40px;
     font-weight: 600;
@@ -506,48 +504,43 @@ border-radius: 20px;
     transform: translate(2px);
 }
 @media screen and (max-width:992px){
-    .prize-box{
-        width: 271px;
-        height: 320px;
-    }
+   
     .prizeamount{
         font-size: 30px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 100px;
-        margin-bottom: 120px;
+        font-size: 120px;
+        margin-bottom: 90px;
     }
     .p_st{
-        margin-bottom: 145px;
+        margin-bottom: 120px;
     }
     .img_p{
-        height: 216px;
-        width: 126px;
+        height: 225px;
+        width: 145px;
         margin-top: 40px;
     }
 }
 @media screen and (max-width:400px){
     .prize-box{
-       
-        height: 270px;
-        padding: 0px;
+        height: 320px;
     }
     .prizeamount{
         font-size: 25px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 70px;
-        margin-bottom: 120px;
+        font-size: 110px;
+        margin-bottom: 60px;
     }
     .p_st{
-        margin-bottom: 138px;
+        margin-bottom: 90px;
     }
     .img_p{
         height: 200px;
         width: 120px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
 }
@@ -573,6 +566,7 @@ border-radius: 20px;
     padding: 24px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    border-bottom: 3px solid var(--light-blue);
 }
 /* inner-content is used in more than one place */
 .inner-content{
@@ -613,13 +607,91 @@ border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.track-btn{
+    /* margin:8px; */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #146EBE;
+    flex-direction: row;
+    align-items: center;
+    width: 58%;
+    text-align: center;
+}
 
 @media screen and (min-width:992px) {
     .track992{
         margin: 0px 20px 50px 20px;
     }
 }
+@media screen and (max-width:1200px) {
+    .track-btn{
+        width: 75%;
+    }
+}
+@media screen and (max-width:992px) {
+    .track-btn{
+        width: 27%;
+    }
+}
+@media screen and (max-width:778px) {
+    .track-btn{
+        width: 37%;
+    }
+}
+@media screen and (max-width:550px) {
+    .track-btn{
+        width: 42%;
+    }
+    .symbol{
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+    }
+    .symbol img{
+        width: 34px;
+        height: 34px;
+    }
+}
+@media screen and (max-width:500px) {
+    .track-btn{
+        width: 46%;
+    }
+}
+@media screen and (max-width:450px) {
+    .track-btn{
+        width: 50%;
+    }
+}
+@media screen and (max-width:430px) {
+    .track-btn{
+        width: 58%;
+    }
+}
+@media screen and (max-width:390px) {
+    .track-btn{
+        width: 65%;
 
+    }
+}
+@media screen and (max-width:360px) {
+    .track-btn{
+        width: 72%;
+
+    }
+}
+@media screen and (max-width:335px) {
+    .track-btn{
+        width: 80%;
+
+    }
+}
+@media screen and (max-width:316px) {
+    .track-btn{
+        width: 90%;
+
+    }
+}
 
 /*--------------------- Tracks end---------------------------------- */
 
