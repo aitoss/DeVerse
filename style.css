@@ -566,7 +566,8 @@ border-radius: 20px;
 }
 
 @keyframes mentor-rotate{
-  100%{transform: rotate(20deg);}
+  50%{transform: rotate(20deg);}
+    100%{transform: rotate(0deg);}
 }
 @keyframes mentor-expand {
    100%{transform: scale(120%,120%);}
@@ -577,12 +578,9 @@ border-radius: 20px;
     max-width: 225px;
     z-index: 2;
 }
-.mentorImg:hover{
-    animation: mentor-expand 0.7s, mentor-rotate 0.7s;
-    /* animation-name: mentor-rotate;
-    animation-name: mentor-expand;
-    animation-duration: 0.7s; */
-}
+
+.mentorImg2:hover ~ .mentorImg { animation: mentor-expand 0.7s, mentor-rotate 0.7s; }
+
 .mcard{
     display: flex;
     flex-direction: column;
