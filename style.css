@@ -504,7 +504,7 @@ border-radius: 20px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; */
-    padding: 0px 40px;
+    padding: 0px 28px;
     /* gap: 40px; */
 /* } */
 
@@ -525,6 +525,7 @@ border-radius: 20px;
 .track1, .track2, .track3{
     display: flex;
     flex-direction: column;
+    /* padding: 16px; */
     gap: 24px;
 } 
 
@@ -549,6 +550,12 @@ border-radius: 20px;
     line-height: 150%;
 }
 
+.main-box:hover{
+    background: #F5FCFF;
+    border-bottom: 3px solid #183153;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 @media screen {
     
 }
