@@ -16,7 +16,8 @@
 
     --section-heading: clamp(2rem, 10vw, 3.125rem);
     --content-heading: clamp(1.35rem, 3vw ,1.75rem);
-    --content-text: clamp(1rem, 1.8vw, 1.125rem)
+    --content-text: clamp(1rem, 1.8vw, 1.125rem);
+    --content-sm-text: clamp(0.75rem, 1.8vw, 1.125rem);
 }
 
 .section-blue{
@@ -597,7 +598,7 @@ border-radius: 20px;
 }
 .inner-content p{
     font-weight: 400;
-    font-size: var(--content-text);
+    font-size: var(--content-sm-text);
     line-height: 150%;
 }
 
@@ -617,6 +618,7 @@ border-radius: 20px;
     align-items: center;
     width: 58%;
     text-align: center;
+    font-size: var(--content-sm-text);
 }
 
 @media screen and (min-width:992px) {
@@ -771,12 +773,13 @@ border-radius: 20px;
 }
 .accordion-button {
     color: #010101;
-    font-size: var(--content-text);
+    font-size: var(--content-sm-text);
     font-family: 'Poppins';
     font-weight: 500;
 }
 .accordion-body{
     color: #757474;
+    font-size: var(--content-sm-text);
 }
 .accordion-button:not(.collapsed) {
     color: #010101;
