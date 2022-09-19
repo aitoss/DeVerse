@@ -505,48 +505,43 @@ border-radius: 20px;
     transform: translate(2px);
 }
 @media screen and (max-width:992px){
-    .prize-box{
-        width: 271px;
-        height: 320px;
-    }
+   
     .prizeamount{
         font-size: 30px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 100px;
-        margin-bottom: 120px;
+        font-size: 120px;
+        margin-bottom: 90px;
     }
     .p_st{
-        margin-bottom: 145px;
+        margin-bottom: 120px;
     }
     .img_p{
-        height: 216px;
-        width: 126px;
+        height: 225px;
+        width: 145px;
         margin-top: 40px;
     }
 }
 @media screen and (max-width:400px){
     .prize-box{
-       
-        height: 280px;
-    
+        height: 320px;
     }
     .prizeamount{
         font-size: 25px;
         padding-top: 35px;
     }
     .p_rank {
-        font-size: 70px;
-        margin-bottom: 120px;
+        font-size: 110px;
+        margin-bottom: 60px;
     }
     .p_st{
-        margin-bottom: 138px;
+        margin-bottom: 90px;
     }
     .img_p{
         height: 200px;
         width: 120px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
 }
