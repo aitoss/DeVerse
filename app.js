@@ -101,3 +101,24 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+// countdown timer
+
+var countDownDate = new Date("Sep 20, 2022 16:00:00").getTime();
+
+var myfunc = setInterval(function() {
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    if (timeleft < 0) {
+        clearInterval(myfunc)
+        document.querySelector(".timer").innerText = "00:00:00";
+    }
+    else {
+        document.querySelector(".timer").innerText = `${(days*24)+hours}:${minutes}:${seconds}`;
+    }
+    }, 1000)
