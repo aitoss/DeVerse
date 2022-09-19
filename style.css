@@ -70,7 +70,7 @@ p{
     margin: 0;
     color: #6E6E6E; */
 font-weight: 400;
-font-size: 13px;
+font-size: var(--content-text);
 line-height: 25px;
 letter-spacing: 0.02em;
 margin: 0;
@@ -603,7 +603,7 @@ border-radius: 20px;
 }
 .inner-content p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--content-text);
     line-height: 150%;
 }
 
@@ -699,7 +699,7 @@ border-radius: 20px;
 }
 .accordion-button {
     color: #010101;
-    font-size: 18px;
+    font-size: var(--content-text);
     font-family: 'Poppins';
     font-weight: 500;
 }
@@ -755,7 +755,7 @@ border-radius: 20px;
 }
 
 .foot-items p{
-    font-size: 120%;
+    font-size: var(--content-text);
 }
 .left-foot span{
     font-weight: bold;
