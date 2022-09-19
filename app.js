@@ -6,11 +6,11 @@ function tlLines(){
     var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
     var lineHeight = pins[1].offsetTop - pins[0].offsetTop - 54.4
     var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left
-    var curveX = pins[0].getBoundingClientRect().left - 111 - tl_section.getBoundingClientRect().left
+    var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left
     var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45
     var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + 25.7
     var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4
-    var curveY = lineY
+    var curveY = lineY + 190
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
     var line_wrap = document.querySelectorAll(".tl-svg")
@@ -19,8 +19,8 @@ function tlLines(){
     curves.forEach(function(item, index){
         curves[index].style.left = `${curveX}px`
         curves[index].style.top = `${curveY}px`
-        curveY += 216
-        curveX += lineWidth + 292
+        curveY -= 190
+        curveX += lineWidth + 280
     })
 
     lines.forEach(function(item, index){
@@ -32,7 +32,7 @@ function tlLines(){
     line_wrap.forEach(function(item, index){
         line_wrap[index].style.left = `${lineX}px`
         line_wrap[index].style.top = `${lineY}px`
-        lineY += 216
+        lineY += 190
         line_wrap[index].style.width = `${lineWidth}px`
     })
 
@@ -103,6 +103,10 @@ window.onload = function() {
 
 
 // countdown timer
+function pad(d) {
+    return (d < 10) ? '0' + d.toString() : d.toString();
+}
+
 
 var countDownDate = new Date("Sep 20, 2022 16:00:00").getTime();
 
@@ -118,6 +122,77 @@ var myfunc = setInterval(function() {
         document.querySelector(".timer").innerText = "00:00:00";
     }
     else {
-        document.querySelector(".timer").innerText = `${(days*24)+hours}:${minutes}:${seconds}`;
+        document.querySelector(".timer").innerText = `${pad((days*24)+hours)}:${pad(minutes)}:${pad(seconds)}`;
     }
     }, 1000)
+
+
+// active state
+
+// function active(x){
+//     x.style.cssText = "color: #000000;"
+// }
+// let home = document.querySelector(".nav-item").firstElementChild;
+// console.log(home)
+// active(home);
+
+document.querySelector(".navbar-nav").addEventListener("click",function(e){
+    if(e.target.className = "nav-link"){
+        active(e.target);
+        console.log('first')
+    }
+});
+
+// function myFunction() {
+//     var x = document.getElementById("navbar-Nav");
+//     x.classList.toggle("show");
+//   }
+//   document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+//     var acc = document.getElementsByClassName("accordion");
+//     var panel = document.getElementsByClassName('panel');
+    
+//     for (i = 0; i < acc.length; i++) {
+//       acc[i].onclick = function(){
+//           this.classList.toggle("active");
+//           this.nextElementSibling.classList.toggle("show_answer");
+//   };
+//   }
+    
+//     function setClass(els, className, fnName) {
+//         for (var i = 0; i < els.length; i++) {
+//             els[i].classList[fnName](className);
+//         }
+//     }
+    
+//     });
+
+function active(x){
+    const boxes = document.querySelectorAll('.nav-link');
+        boxes.forEach(box => {
+        box.style.color = '#7F7F7F';
+        box.style.fontWeight = '100px';
+        });
+        console.log('')
+    x.style.cssText = "color: #183153;";
+};
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    let sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+console.log(current)
+let vall= document.querySelector(`.${current}`);
+if (vall !== null) {
+    console.log(vall)
+    active(vall)
+  }
+
+};
