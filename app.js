@@ -2,14 +2,15 @@ tlLines()
 
 function tlLines(){
     var pins = document.querySelectorAll(".tl-img")
+    var tl_section= document.querySelector(".tl")
     var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
-    var lineHeight = pins[1].offsetTop - pins[0].offsetTop - 56.4
-    var lineX = pins[0].getBoundingClientRect().left + 91
-    var curveX = pins[0].getBoundingClientRect().left - 110
-    var lineY = 273 + window.innerHeight    
-    var VlineX = pins[0].getBoundingClientRect().left + 26.7
-    var VlineY = pins[0].getBoundingClientRect().top - document.getElementById("timeline").getBoundingClientRect().top + 814.5
-    var curveY = lineY + 1
+    var lineHeight = pins[1].offsetTop - pins[0].offsetTop - 54.4
+    var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left
+    var curveX = pins[0].getBoundingClientRect().left - 111 - tl_section.getBoundingClientRect().left
+    var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45
+    var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + 25.7
+    var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4
+    var curveY = lineY
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
     var line_wrap = document.querySelectorAll(".tl-svg")
@@ -39,7 +40,7 @@ function tlLines(){
         v_line[index].style.left = `${VlineX}px`
         v_line[index].style.top = `${VlineY}px`
         v_line[index].style.height = `${lineHeight}px`
-        VlineY += lineHeight + 56.4
+        VlineY += lineHeight + 54.4
     })
 }
 tlLines();
