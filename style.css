@@ -503,6 +503,28 @@ border-radius: 20px;
     box-shadow: 6px 6px 6px 6px #3a3a3b;
     transform: translate(2px);
 }
+@media screen and (max-width:992px){
+    .prize-box{
+        width: 271px;
+        height: 320px;
+    }
+    .prizeamount{
+        font-size: 30px;
+        padding-top: 35px;
+    }
+    .p_rank {
+        font-size: 100px;
+        margin-bottom: 120px;
+    }
+    .p_st{
+        margin-bottom: 145px;
+    }
+    .img_p{
+        height: 216px;
+        width: 126px;
+        margin-top: 40px;
+    }
+}
 /*----------------------- prize section  --------------------------*/
 
 /*--------------------- Tracks starts------------------------------- */
