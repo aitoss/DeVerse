@@ -563,9 +563,9 @@ border-radius: 20px;
     border-radius: 8px;
 }
 
-@media screen {
+/* @media screen and (max-width:) {
     
-}
+} */
 
 
 /*--------------------- Tracks end---------------------------------- */
@@ -659,17 +659,13 @@ border-radius: 20px;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 .accordion-button::after{
-    background-image:url(images/faq/Plus\ before.svg);
-    background-size: 2rem;
     width: 2rem;
     height: 2rem;
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url(images/faq/Plus\ after.svg);
-    background-size: 2rem;
     width: 2rem;
     height: 2rem;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 @media screen and (max-width:992px) {
     .faq-img-cont, .faq-img{

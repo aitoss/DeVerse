@@ -43,7 +43,6 @@ function tlLines(){
         VlineY += lineHeight + 54.4
     })
 }
-tlLines();
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
