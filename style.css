@@ -20,6 +20,9 @@
     --content-sm-text: clamp(0.75rem, 1.8vw, 1.125rem);
 }
 
+.content-sm-text{
+    font-size: var(--content-sm-text);
+}
 .section-blue{
     background-color: var(--light-blue);
     z-index: -10;
@@ -616,7 +619,7 @@ border-radius: 20px;
     background-color: #146EBE;
     flex-direction: row;
     align-items: center;
-    width: 58%;
+    width: 200px;
     text-align: center;
     font-size: var(--content-sm-text);
 }
@@ -628,22 +631,22 @@ border-radius: 20px;
 }
 @media screen and (max-width:1200px) {
     .track-btn{
-        width: 75%;
+        width: 190px;
     }
 }
 @media screen and (max-width:992px) {
     .track-btn{
-        width: 27%;
+        width: 190px;
     }
 }
 @media screen and (max-width:778px) {
     .track-btn{
-        width: 37%;
+        width: 170px;
     }
 }
 @media screen and (max-width:550px) {
     .track-btn{
-        width: 42%;
+        width:150px;
     }
     .symbol{
         width: 50px;
@@ -655,45 +658,8 @@ border-radius: 20px;
         height: 34px;
     }
 }
-@media screen and (max-width:500px) {
-    .track-btn{
-        width: 46%;
-    }
-}
-@media screen and (max-width:450px) {
-    .track-btn{
-        width: 50%;
-    }
-}
-@media screen and (max-width:430px) {
-    .track-btn{
-        width: 58%;
-    }
-}
-@media screen and (max-width:390px) {
-    .track-btn{
-        width: 65%;
 
-    }
-}
-@media screen and (max-width:360px) {
-    .track-btn{
-        width: 72%;
 
-    }
-}
-@media screen and (max-width:335px) {
-    .track-btn{
-        width: 80%;
-
-    }
-}
-@media screen and (max-width:316px) {
-    .track-btn{
-        width: 90%;
-
-    }
-}
 
 /*--------------------- Tracks end---------------------------------- */
 
@@ -723,6 +689,9 @@ border-radius: 20px;
     position: absolute;
     max-width: 225px;
     z-index: 2;
+}
+.name{
+    margin-top: 30px !important;
 }
 
 .mentorImg2:hover ~ .mentorImg { animation: mentor-expand 0.7s, mentor-rotate 0.7s; }
@@ -804,39 +773,68 @@ border-radius: 20px;
 /* FAQs END----------------------------------------------------------------------------------------------------------------- */
 
 /* Footer start */
-.foot-items{
+/* .foot-items{
     display: flex;
     flex-direction: row;
     color: white;
     height: 272px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
-}
+/* } */
 
 
-.mid-foot{
+/* .mid-foot{
     /* padding-bottom:10px; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px;
 }
 .l-foot-img{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
+}*/
 #footer{
     background-color: rgba(193, 219, 248, 1);
 }
 
-.foot-items p{
+/* .foot-items p{
     font-size: var(--content-text);
 }
 .left-foot span{
     font-weight: bold;
 
+} */
+.footer-icons > img{
+    max-width: 40px;
 }
 
+@media screen and (max-width:768px) {
+    .footer-img{
+        position: relative;
+        top: -50px
+    }
+    /* .footer-row p{
+        font-size: 12px !important;
+    } */
+}
 
-
+@media screen and (max-width:500px) {
+    .mid-foot{
+        display: none;
+    }
+    .mid-foot img{
+        display: none;
+    }
+    .footer-row, .footer-row .col-md{
+        width: 100%;
+    }
+    .footer-row p{
+        text-align: center;
+    }
+    .footer-img{
+        position: static;
+        margin-bottom: 10px;
+    }
+}
 /* Footer ends */
