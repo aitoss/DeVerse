@@ -474,6 +474,9 @@ border-radius: 20px;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
+.prizeRow{
+    margin-bottom: 20px;
+}
 .prizeamount{
     font-size: 40px;
     font-weight: 600;
@@ -499,7 +502,7 @@ border-radius: 20px;
 
 /* transition in price section */
 .prize-box:hover{
-    box-shadow: 6px 6px 6px 6px #3a3a3b;
+    box-shadow: 6px 6px 6px 6px #18315389;
     transform: translate(2px);
 }
 @media screen and (max-width:992px){
@@ -523,6 +526,30 @@ border-radius: 20px;
         width: 126px;
         margin-top: 40px;
     }
+}
+@media screen and (max-width:400px){
+    .prize-box{
+       
+        height: 270px;
+        padding: 0px;
+    }
+    .prizeamount{
+        font-size: 25px;
+        padding-top: 35px;
+    }
+    .p_rank {
+        font-size: 70px;
+        margin-bottom: 120px;
+    }
+    .p_st{
+        margin-bottom: 138px;
+    }
+    .img_p{
+        height: 200px;
+        width: 120px;
+        margin-top: 5px;
+    }
+
 }
 /*----------------------- prize section  --------------------------*/
 
