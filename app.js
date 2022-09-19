@@ -103,6 +103,10 @@ window.onload = function() {
 
 
 // countdown timer
+function pad(d) {
+    return (d < 10) ? '0' + d.toString() : d.toString();
+}
+
 
 var countDownDate = new Date("Sep 20, 2022 16:00:00").getTime();
 
@@ -118,6 +122,77 @@ var myfunc = setInterval(function() {
         document.querySelector(".timer").innerText = "00:00:00";
     }
     else {
-        document.querySelector(".timer").innerText = `${(days*24)+hours}:${minutes}:${seconds}`;
+        document.querySelector(".timer").innerText = `${pad((days*24)+hours)}:${pad(minutes)}:${pad(seconds)}`;
     }
     }, 1000)
+
+
+// active state
+
+// function active(x){
+//     x.style.cssText = "color: #000000;"
+// }
+// let home = document.querySelector(".nav-item").firstElementChild;
+// console.log(home)
+// active(home);
+
+document.querySelector(".navbar-nav").addEventListener("click",function(e){
+    if(e.target.className = "nav-link"){
+        active(e.target);
+        console.log('first')
+    }
+});
+
+// function myFunction() {
+//     var x = document.getElementById("navbar-Nav");
+//     x.classList.toggle("show");
+//   }
+//   document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+//     var acc = document.getElementsByClassName("accordion");
+//     var panel = document.getElementsByClassName('panel');
+    
+//     for (i = 0; i < acc.length; i++) {
+//       acc[i].onclick = function(){
+//           this.classList.toggle("active");
+//           this.nextElementSibling.classList.toggle("show_answer");
+//   };
+//   }
+    
+//     function setClass(els, className, fnName) {
+//         for (var i = 0; i < els.length; i++) {
+//             els[i].classList[fnName](className);
+//         }
+//     }
+    
+//     });
+
+function active(x){
+    const boxes = document.querySelectorAll('.nav-link');
+        boxes.forEach(box => {
+        box.style.color = '#7F7F7F';
+        box.style.fontWeight = '100px';
+        });
+        console.log('')
+    x.style.cssText = "color: #183153;";
+};
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    let sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+console.log(current)
+let vall= document.querySelector(`.${current}`);
+if (vall !== null) {
+    console.log(vall)
+    active(vall)
+  }
+
+};
