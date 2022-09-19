@@ -503,7 +503,7 @@ border-radius: 20px;
 /*----------------------- prize section  --------------------------*/
 
 /*--------------------- Tracks starts------------------------------- */
-/* .tracks-content{ */
+.tracks-content{
     /* display: flex; */
     /* justify-content: space-between; */
     /* display: flex;
@@ -512,7 +512,7 @@ border-radius: 20px;
     align-items: flex-start; */
     padding: 0px 28px;
     /* gap: 40px; */
-/* } */
+}
 
 .main-box{
     background: var(--light-blue);
@@ -562,6 +562,7 @@ border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 @media screen {
     
 }
