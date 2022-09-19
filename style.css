@@ -420,6 +420,7 @@ border-radius: 20px;
         flex-direction: row;
         flex-flow: row-reverse;
         justify-content: space-evenly;
+        align-items: baseline;
     }
     .tl-row{
         display: flex;
@@ -430,6 +431,7 @@ border-radius: 20px;
     .tl-img{
         transform: scale(60%, 60%);
         z-index: -1;
+        margin-top: 0px;
     }
     .tl-svg{
         display: none !important;
