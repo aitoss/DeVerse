@@ -164,6 +164,15 @@ border-radius: 20px;
     align-items: center;
 }
 
+.timmer{
+    letter-spacing: 2px !important;
+    width: 115px;
+}
+/* .active{
+    color: var(--primary-blue) !important;
+    font-weight: bold !important;
+} */
+
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
     .herocontainer{
@@ -242,9 +251,8 @@ border-radius: 20px;
 }
 @media only screen and (max-width: 420px){
     .rulebookButton{
-        padding: 10px 32px;
-        gap: 12px;    
-        width: 80px;
+        padding: 10px 25px;   
+        width: fit-content;
         height: 32px;
         font-weight: 100;
     }
@@ -260,6 +268,9 @@ border-radius: 20px;
         margin-top: 15px;
         font-size: 11px;
         line-height: 20px;
+    }
+    .logoSub{
+        display: none;
     }
     .heroBox .section-txt{font-size: 15px;}
 }
@@ -600,7 +611,9 @@ border-radius: 20px;
     max-width: 225px;
     z-index: 2;
 }
-
+.mentorImg{
+    
+}
 .mentorImg2:hover ~ .mentorImg { animation: mentor-expand 0.7s, mentor-rotate 0.7s; }
 
 .mcard{
