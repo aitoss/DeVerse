@@ -574,12 +574,17 @@ border-radius: 20px;
 /*--------------------- Tracks end---------------------------------- */
 
 /*--------------------Judges and mentors-----------------------------*/
+.mentor-icon{
+    height: 54px;
+    width: 54px;
+}
 .mentor-img{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
 .mentorImg2{
     max-width: 143px;
     height: auto;
@@ -587,21 +592,43 @@ border-radius: 20px;
     z-index: 4;
 }
 
-@keyframes mentor-rotate{
-  50%{transform: rotate(20deg);}
-    100%{transform: rotate(0deg);}
-}
-@keyframes mentor-expand {
-   100%{transform: scale(120%,120%);}
+.mentor-img .icon-circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.7s;
 }
 
+.mcard:hover .icon-circle{
+    opacity: 1;
+    transition: 0.7s ease-in;
+}
+.mcard:hover .mentor-img .centre{
+    transform: translate(-15px, -15px);
+    transition: 0.7s ease-in;
+}
+.mcard:hover .mentor-img .left{
+    transform: translate(-40px, 40px);
+    transition: 0.7s ease-in;
+}
+.mcard:hover .mentor-img .right{
+    transform: translate(40px, -40px);
+    transition: 0.7s ease-in;
+}
 .mentorImg{
     position: absolute;
     max-width: 225px;
     z-index: 2;
 }
-
-.mentorImg2:hover ~ .mentorImg { animation: mentor-expand 0.7s, mentor-rotate 0.7s; }
+.mcard:hover .mentorImg{
+    transform: rotate(60deg);
+ 
+ }
 
 .mcard{
     display: flex;
