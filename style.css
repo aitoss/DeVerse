@@ -166,6 +166,9 @@ border-radius: 20px;
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
+    .herocontainer{
+        padding-bottom: 30px;
+    }
     .form-inline{
         position: absolute;
         top: 0;
@@ -221,7 +224,8 @@ border-radius: 20px;
         flex-direction: column;
         align-items: center;
         margin:auto;
-        padding-top: 10px;
+        width: 90%;
+        padding: 20px;
     }
     .heroBox p{
         font-size: 50px;
@@ -249,12 +253,12 @@ border-radius: 20px;
         line-height: 80px;
     }
     .heroContent p{
-        font-size: 16px;
+        font-size: 20px;
         line-height: 10px;
     }
     .heroContent .section-txt{
         margin-top: 15px;
-        font-size: 11px;
+        font-size: 16px;
         line-height: 20px;
     }
 }
