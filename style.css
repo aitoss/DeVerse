@@ -132,7 +132,7 @@ color: #6E6E6E;
 .heroContent p{
     font-weight: 400;
     font-size: 25px;
-    line-height: 50px;
+    /* line-height: 50px; */
     letter-spacing: 0.01em;
     color: #183153;
 }
@@ -258,9 +258,10 @@ border-radius: 20px;
     }
     .heroContent .section-txt{
         margin-top: 15px;
-        font-size: 16px;
+        font-size: 11px;
         line-height: 20px;
     }
+    .heroBox .section-txt{font-size: 15px;}
 }
 @media only screen and (min-width: 992px) {
     .navbar{
