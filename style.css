@@ -571,6 +571,7 @@ border-radius: 20px;
     padding: 24px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    border-bottom: 3px solid var(--light-blue);
 }
 /* inner-content is used in more than one place */
 .inner-content{
@@ -611,13 +612,91 @@ border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.track-btn{
+    /* margin:8px; */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #146EBE;
+    flex-direction: row;
+    align-items: center;
+    width: 58%;
+    text-align: center;
+}
 
 @media screen and (min-width:992px) {
     .track992{
         margin: 0px 20px 50px 20px;
     }
 }
+@media screen and (max-width:1200px) {
+    .track-btn{
+        width: 75%;
+    }
+}
+@media screen and (max-width:992px) {
+    .track-btn{
+        width: 27%;
+    }
+}
+@media screen and (max-width:778px) {
+    .track-btn{
+        width: 37%;
+    }
+}
+@media screen and (max-width:550px) {
+    .track-btn{
+        width: 42%;
+    }
+    .symbol{
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+    }
+    .symbol img{
+        width: 34px;
+        height: 34px;
+    }
+}
+@media screen and (max-width:500px) {
+    .track-btn{
+        width: 46%;
+    }
+}
+@media screen and (max-width:450px) {
+    .track-btn{
+        width: 50%;
+    }
+}
+@media screen and (max-width:430px) {
+    .track-btn{
+        width: 58%;
+    }
+}
+@media screen and (max-width:390px) {
+    .track-btn{
+        width: 65%;
 
+    }
+}
+@media screen and (max-width:360px) {
+    .track-btn{
+        width: 72%;
+
+    }
+}
+@media screen and (max-width:335px) {
+    .track-btn{
+        width: 80%;
+
+    }
+}
+@media screen and (max-width:316px) {
+    .track-btn{
+        width: 90%;
+
+    }
+}
 
 /*--------------------- Tracks end---------------------------------- */
 
