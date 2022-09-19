@@ -19,6 +19,10 @@
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
     .container{
+        max-width: 100%;
+        padding: 0 10%;
+    }
+    .herocontainer{
         padding: 0 10%;
         margin: 0;
         max-width: 100%;
