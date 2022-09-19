@@ -6,11 +6,11 @@ function tlLines(){
     var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
     var lineHeight = pins[1].offsetTop - pins[0].offsetTop - 54.4
     var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left
-    var curveX = pins[0].getBoundingClientRect().left - 111 - tl_section.getBoundingClientRect().left
+    var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left
     var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45
     var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + 25.7
     var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4
-    var curveY = lineY
+    var curveY = lineY + 190
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
     var line_wrap = document.querySelectorAll(".tl-svg")
@@ -19,8 +19,8 @@ function tlLines(){
     curves.forEach(function(item, index){
         curves[index].style.left = `${curveX}px`
         curves[index].style.top = `${curveY}px`
-        curveY += 216
-        curveX += lineWidth + 292
+        curveY -= 190
+        curveX += lineWidth + 280
     })
 
     lines.forEach(function(item, index){
@@ -32,7 +32,7 @@ function tlLines(){
     line_wrap.forEach(function(item, index){
         line_wrap[index].style.left = `${lineX}px`
         line_wrap[index].style.top = `${lineY}px`
-        lineY += 216
+        lineY += 190
         line_wrap[index].style.width = `${lineWidth}px`
     })
 

@@ -13,8 +13,39 @@
     --secondary-blue: #E9F5FF;
     --light-blue: #F5FCFF;
     --dark-content: #333333;
-    
+
+    --section-heading: clamp(2rem, 10vw, 3.125rem);
+    --content-heading: clamp(1.35rem, 3vw ,1.75rem);
+    --content-text: clamp(1rem, 1.8vw, 1.125rem);
+    --content-sm-text: clamp(0.75rem, 1.8vw, 1.125rem);
 }
+
+.section-blue{
+    background-color: var(--light-blue);
+    z-index: -10;
+}
+.section-dark-blue{
+    background-color: var(--primary-blue);
+}
+.section-white{
+    background-color: white;
+    z-index: -10;
+}
+.section-txt{
+    font-weight: 700px;
+    /* font-size: 18px; */
+    font-size: var(--content-heading);
+    color: var(--primary-blue);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: var(--section-heading);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    color: var(--primary-blue);
+}
+
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
@@ -40,7 +71,7 @@ p{
     margin: 0;
     color: #6E6E6E; */
 font-weight: 400;
-font-size: 13px;
+font-size: var(--content-text);
 line-height: 25px;
 letter-spacing: 0.02em;
 margin: 0;
@@ -245,9 +276,6 @@ border-radius: 20px;
         font-weight: 400;
         padding-top: 10px;
     }
-    .section-title{
-        font-size: 32px;
-    }
 }
 @media only screen and (max-width: 420px){
     .rulebookButton{
@@ -307,35 +335,6 @@ border-radius: 20px;
     }
 }
 
-
-
-
-.section-blue{
-    background-color: var(--light-blue);
-    z-index: -10;
-}
-.section-dark-blue{
-    background-color: var(--primary-blue);
-}
-.section-white{
-    background-color: white;
-    z-index: -10;
-}
-.section-txt{
-    font-weight: 500px;
-    font-size: 18px;
-    color: var(--primary-blue);
-}
-
-.section-title{
-    font-weight: bold;
-    font-size: 50px;
-    letter-spacing: 0.02em;
-    margin-bottom: 10px;
-    color: var(--primary-blue);
-}
-
-
 /* ---------------------------------------------------------------------------Timeline Section Starts */
 .tl-container{
     z-index: -100;
@@ -374,7 +373,7 @@ border-radius: 20px;
 .tl-date{
     font-weight: bold;
     color: var(--primary-blue);
-    font-size: 23px;
+    font-size: var(--content-heading);
     margin-bottom: 5px;
 }
 .tl-img{
@@ -382,7 +381,8 @@ border-radius: 20px;
 }
 .tl-event{
     font-weight: 500px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--content-text);
     color: var(--dark-content);
 }
 
@@ -419,7 +419,7 @@ border-radius: 20px;
         display: none;
     }
     .tl{
-        width: 55%;
+        width: 70%;
     }
 }
 /* Medium devices (landscape tablets, 768px and down) */
@@ -431,6 +431,7 @@ border-radius: 20px;
         flex-direction: row;
         flex-flow: row-reverse;
         justify-content: space-evenly;
+        align-items: baseline;
     }
     .tl-row{
         display: flex;
@@ -441,6 +442,7 @@ border-radius: 20px;
     .tl-img{
         transform: scale(60%, 60%);
         z-index: -1;
+        margin-top: 0px;
     }
     .tl-svg{
         display: none !important;
@@ -484,6 +486,7 @@ border-radius: 20px;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
+
 .prizeamount{
     font-size: 40px;
     font-weight: 600;
@@ -509,8 +512,49 @@ border-radius: 20px;
 
 /* transition in price section */
 .prize-box:hover{
-    box-shadow: 6px 6px 6px 6px #3a3a3b;
+    box-shadow: 6px 6px 6px 6px #18315389;
     transform: translate(2px);
+}
+@media screen and (max-width:992px){
+   
+    .prizeamount{
+        font-size: 30px;
+        padding-top: 35px;
+    }
+    .p_rank {
+        font-size: 120px;
+        margin-bottom: 90px;
+    }
+    .p_st{
+        margin-bottom: 120px;
+    }
+    .img_p{
+        height: 225px;
+        width: 145px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .prize-box{
+        height: 320px;
+    }
+    .prizeamount{
+        font-size: 25px;
+        padding-top: 35px;
+    }
+    .p_rank {
+        font-size: 110px;
+        margin-bottom: 60px;
+    }
+    .p_st{
+        margin-bottom: 90px;
+    }
+    .img_p{
+        height: 200px;
+        width: 120px;
+        margin-top: 20px;
+    }
+
 }
 /*----------------------- prize section  --------------------------*/
 
@@ -534,6 +578,7 @@ border-radius: 20px;
     padding: 24px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    border-bottom: 3px solid var(--light-blue);
 }
 /* inner-content is used in more than one place */
 .inner-content{
@@ -564,7 +609,7 @@ border-radius: 20px;
 }
 .inner-content p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--content-sm-text);
     line-height: 150%;
 }
 
@@ -574,13 +619,92 @@ border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.track-btn{
+    /* margin:8px; */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #146EBE;
+    flex-direction: row;
+    align-items: center;
+    width: 58%;
+    text-align: center;
+    font-size: var(--content-sm-text);
+}
 
 @media screen and (min-width:992px) {
     .track992{
         margin: 0px 20px 50px 20px;
     }
 }
+@media screen and (max-width:1200px) {
+    .track-btn{
+        width: 75%;
+    }
+}
+@media screen and (max-width:992px) {
+    .track-btn{
+        width: 27%;
+    }
+}
+@media screen and (max-width:778px) {
+    .track-btn{
+        width: 37%;
+    }
+}
+@media screen and (max-width:550px) {
+    .track-btn{
+        width: 42%;
+    }
+    .symbol{
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+    }
+    .symbol img{
+        width: 34px;
+        height: 34px;
+    }
+}
+@media screen and (max-width:500px) {
+    .track-btn{
+        width: 46%;
+    }
+}
+@media screen and (max-width:450px) {
+    .track-btn{
+        width: 50%;
+    }
+}
+@media screen and (max-width:430px) {
+    .track-btn{
+        width: 58%;
+    }
+}
+@media screen and (max-width:390px) {
+    .track-btn{
+        width: 65%;
 
+    }
+}
+@media screen and (max-width:360px) {
+    .track-btn{
+        width: 72%;
+
+    }
+}
+@media screen and (max-width:335px) {
+    .track-btn{
+        width: 80%;
+
+    }
+}
+@media screen and (max-width:316px) {
+    .track-btn{
+        width: 90%;
+
+    }
+}
 
 /*--------------------- Tracks end---------------------------------- */
 
@@ -662,12 +786,13 @@ border-radius: 20px;
 }
 .accordion-button {
     color: #010101;
-    font-size: 18px;
+    font-size: var(--content-sm-text);
     font-family: 'Poppins';
     font-weight: 500;
 }
 .accordion-body{
     color: #757474;
+    font-size: var(--content-sm-text);
 }
 .accordion-button:not(.collapsed) {
     color: #010101;
@@ -718,7 +843,7 @@ border-radius: 20px;
 }
 
 .foot-items p{
-    font-size: 120%;
+    font-size: var(--content-text);
 }
 .left-foot span{
     font-weight: bold;
