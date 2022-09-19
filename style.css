@@ -525,6 +525,30 @@ border-radius: 20px;
         margin-top: 40px;
     }
 }
+@media screen and (max-width:400px){
+    .prize-box{
+       
+        height: 270px;
+        padding: 0px;
+    }
+    .prizeamount{
+        font-size: 25px;
+        padding-top: 35px;
+    }
+    .p_rank {
+        font-size: 70px;
+        margin-bottom: 120px;
+    }
+    .p_st{
+        margin-bottom: 138px;
+    }
+    .img_p{
+        height: 200px;
+        width: 120px;
+        margin-top: 5px;
+    }
+
+}
 /*----------------------- prize section  --------------------------*/
 
 /*--------------------- Tracks starts------------------------------- */
