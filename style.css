@@ -209,7 +209,7 @@ border-radius: 20px;
 } */
 
 /* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991.5px) {
     .herocontainer{
         padding-bottom: 30px;
     }
