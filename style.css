@@ -584,11 +584,27 @@ border-radius: 20px;
         margin-bottom: 90px;
     }
     .img_p{
-        height: 200px;
-        width: 120px;
+        /* height: 200px; */
+        width: 110px;
         margin-top: 20px;
     }
-
+}
+@media screen and (max-width:350px){
+    .p_rank{
+        font-size: 90px;
+        margin-bottom: 100px;
+    }
+    .p_st{
+        font-size: 25px;
+        margin-bottom: 120px;
+    }
+    .prize-box{
+        height: 260px;
+    }
+    .img_p{
+        width: 80px;
+        margin-top: 0px;
+    }
 }
 /*----------------------- prize section  --------------------------*/
 
