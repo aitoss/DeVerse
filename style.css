@@ -648,6 +648,10 @@ border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 } */
+
+.track992{
+    position: relative;
+}
 .track-btn{
     /* margin:8px; */
     padding: 10px 20px;
@@ -659,8 +663,13 @@ border-radius: 20px;
     width: 200px;
     text-align: center;
     font-size: var(--content-sm-text);
+    position: absolute;
+    top: calc(100% - 70px);
 }
-
+.track-btn-h{
+    visibility: hidden;
+    position: static;
+}
 @media screen and (min-width:992px) {
     .track992{
         margin: 0px 20px 50px 20px;
