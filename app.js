@@ -108,7 +108,7 @@ function pad(d) {
 }
 
 
-var countDownDate = new Date("Sep 20, 2022 16:00:00").getTime();
+var countDownDate = new Date("Sep 24, 2022 00:00:00").getTime();
 
 var myfunc = setInterval(function() {
     var now = new Date().getTime();
@@ -139,7 +139,7 @@ var myfunc = setInterval(function() {
 document.querySelector(".navbar-nav").addEventListener("click",function(e){
     if(e.target.className = "nav-link"){
         active(e.target);
-        console.log('first')
+        // console.log('first')
     }
 });
 
@@ -174,7 +174,8 @@ function active(x){
         box.style.color = '#7F7F7F';
         box.style.fontWeight = '100px';
         });
-        console.log('')
+       
+        // console.log('')
     x.style.cssText = "color: #183153;";
 };
 const sections = document.querySelectorAll("section");
@@ -188,10 +189,10 @@ window.onscroll = () => {
       current = section.getAttribute("id"); }
   });
 
-console.log(current)
+// console.log(current)
 let vall= document.querySelector(`.${current}`);
 if (vall !== null) {
-    console.log(vall)
+    // console.log(vall)
     active(vall)
   }
 
