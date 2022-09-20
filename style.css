@@ -641,10 +641,15 @@ border-radius: 20px;
     align-items: center; */
     /* gap: 10px; */
 }
+.inner-content h5{
+    font-weight: 700;
+    color: var(--primary-blue);
+}
 .inner-content p{
     font-weight: 400;
     font-size: var(--content-sm-text);
     line-height: 150%;
+    color: var(--primary-blue);
 }
 
 /* .main-box:hover{
