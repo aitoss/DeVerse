@@ -124,7 +124,7 @@ var myfunc = setInterval(function() {
     else {
         document.querySelector(".timer").innerText = `${pad((days*24)+hours)}:${pad(minutes)}:${pad(seconds)}`;
     }
-    }, 1000)
+    }, 1000);
 
 
 // active state
@@ -136,48 +136,26 @@ var myfunc = setInterval(function() {
 // console.log(home)
 // active(home);
 
-document.querySelector(".navbar-nav").addEventListener("click",function(e){
-    if(e.target.className = "nav-link"){
-        active(e.target);
-        // console.log('first')
-    }
-});
-
-// function myFunction() {
-//     var x = document.getElementById("navbar-Nav");
-//     x.classList.toggle("show");
-//   }
-//   document.addEventListener("DOMContentLoaded", function(event) { 
-
-
-//     var acc = document.getElementsByClassName("accordion");
-//     var panel = document.getElementsByClassName('panel');
-    
-//     for (i = 0; i < acc.length; i++) {
-//       acc[i].onclick = function(){
-//           this.classList.toggle("active");
-//           this.nextElementSibling.classList.toggle("show_answer");
-//   };
-//   }
-    
-//     function setClass(els, className, fnName) {
-//         for (var i = 0; i < els.length; i++) {
-//             els[i].classList[fnName](className);
-//         }
+// document.querySelector(".navbar-nav").addEventListener("click",function(e){
+//     if(e.target.className = "nav-link"){
+//         active(e.target);
 //     }
-    
-//     });
+// });
+
+// active(document.querySelector('.homeSec'))
 
 function active(x){
     const boxes = document.querySelectorAll('.nav-link');
         boxes.forEach(box => {
         box.style.color = '#7F7F7F';
-        box.style.fontWeight = '100px';
+        box.style.fontWeight="100";
         });
-       
-        // console.log('')
     x.style.cssText = "color: #183153;";
+    x.style.fontWeight="700";
+
 };
+active(document.querySelector('#s1'));
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
 window.onscroll = () => {
@@ -197,3 +175,39 @@ if (vall !== null) {
   }
 
 };
+
+// let timeline = document.querySelector('#s2');
+// //Default active on home
+
+
+
+/*
+Using jquery waypoints to change active on scroll
+*/
+// timeline.waypoint(function() {
+//  active(timeline);
+// }, { offset: 101 });
+
+
+// $('#3').waypoint(function() {
+//  $(".nav-container ul li").children().removeClass("active");
+//  $("#s3").addClass("active");
+// }, { offset: 101 });
+
+// $('#4').waypoint(function() {
+//  $(".nav-container ul li").children().removeClass("active");
+//  $("#s4").addClass("active");
+// }, { offset: 101 });
+
+// $('#1').waypoint(function() {
+//  $(".nav-container ul li").children().removeClass("active");
+//  $("#s1").addClass("active");
+// }, { offset: 0 });
+
+// $('#2').waypoint(function() {
+//  $(".to-top").addClass("visible");
+// }, { offset: 100 });
+
+// $('#1').waypoint(function(event, direction) {
+//  $(".to-top").removeClass("visible");
+// }, { offset: 30 });

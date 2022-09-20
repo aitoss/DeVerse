@@ -41,6 +41,11 @@
     color: var(--primary-blue);
 }
 
+.active{
+    font-weight: 700px;
+    color: var(--primary-blue);
+}
+
 .section-title{
     font-weight: bold;
     font-size: var(--section-heading);
@@ -106,7 +111,7 @@ color: #6E6E6E;
 }
 .nav-link{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 14px;
     color: #7F7F7F;
 }
