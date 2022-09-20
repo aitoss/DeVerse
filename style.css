@@ -880,7 +880,7 @@ border-radius: 20px;
 
 } */
 .footer-icons img{
-    max-width: 40px;
+    max-height: 30px;
 }
 
 @media screen and (max-width:768px) {
@@ -895,9 +895,6 @@ border-radius: 20px;
 
 @media screen and (max-width:500px) {
     .mid-foot{
-        display: none;
-    }
-    .mid-foot img{
         display: none;
     }
     .footer-row, .footer-row .col-md{
