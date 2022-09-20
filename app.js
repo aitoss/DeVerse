@@ -32,7 +32,7 @@ function tlLines(){
     line_wrap.forEach(function(item, index){
         line_wrap[index].style.left = `${lineX}px`
         line_wrap[index].style.top = `${lineY}px`
-        lineY += 190
+        lineY += 195
         line_wrap[index].style.width = `${lineWidth}px`
     })
 

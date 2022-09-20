@@ -425,7 +425,7 @@ border-radius: 20px;
 .tl-pin-pin{
     position: relative;
     top: 0px;
-    left: -50%;
+    left: calc(-50% - 2px);
 }
 
 .tl-pin-pin:hover{
@@ -486,6 +486,14 @@ border-radius: 20px;
     }
     .tl-v-line{
         display: inline;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    .tl-pin-pin{
+        position: relative;
+        top: -66px;
+        left: 31px;
     }
 }
 
