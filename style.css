@@ -268,7 +268,7 @@ color: #6E6E6E;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 18px 40px;
+    /* padding: 18px 40px; */
     gap: 12px;
     font-size: 14px;
 

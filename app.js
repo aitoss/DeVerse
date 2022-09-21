@@ -9,7 +9,7 @@ function tlLines(){
     var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left;
     var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left;
     var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45;
-    var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + ((document.querySelector(".tl-pin-circle").clientWidth)*0.6)/2;
+    var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + ((document.querySelector(".tl-pin-circle").clientWidth)*0.58)/2;
     var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4;
     var curveY = lineY + 190
     var curves = document.querySelectorAll(".tl-crv")
