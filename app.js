@@ -11,7 +11,7 @@ function tlLines(){
     var pins = document.querySelectorAll(".tl-img")
     var tl_section= document.querySelector(".tl")
     var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
-    var lineHeight = pins[1].offsetTop - pins[0].offsetTop - 54.4
+    var lineHeight = pins[5].offsetTop - pins[0].offsetTop - 54.4
     var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left
     var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left
     var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45
@@ -21,7 +21,7 @@ function tlLines(){
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
     var line_wrap = document.querySelectorAll(".tl-svg")
-    var v_line = document.querySelectorAll(".tl-v-svg")
+    var v_line = document.querySelector(".tl-v-svg")
 
     curves.forEach(function(item, index){
         curves[index].style.left = `${curveX}px`
@@ -43,12 +43,11 @@ function tlLines(){
         line_wrap[index].style.width = `${lineWidth}px`
     })
 
-    v_line.forEach(function(item, index){
-        v_line[index].style.left = `${VlineX}px`
-        v_line[index].style.top = `${VlineY}px`
-        v_line[index].style.height = `${lineHeight}px`
-        VlineY += lineHeight + 54.4
-    })
+    v_line.style.left = `${VlineX}px`
+    v_line.style.top = `${VlineY}px`
+    v_line.style.height = `${lineHeight}px`
+
+    
 }
 
 var TxtType = function(el, toRotate, period) {
