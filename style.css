@@ -480,7 +480,7 @@ border-radius: 20px;
         display: block;
         background-color: var(--primary-blue);
         position: absolute;
-        height: 96px;
+        height: 200px;
         width: 3px;
         z-index: 15;
     }
