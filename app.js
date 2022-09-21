@@ -47,6 +47,16 @@ function tlLines(){
 setTimeout(() => {
     tlLines();
 }, 3500);
+setTimeout(() => {
+    tlLines();
+}, 5000);
+setTimeout(() => {
+    tlLines();
+}, 6000);
+setTimeout(() => {
+    tlLines();
+}, 7000);
+
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
