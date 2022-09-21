@@ -2,15 +2,15 @@
 tlLines()
 
 function tlLines(){
-    var pins = document.querySelectorAll(".tl-img")
-    var tl_section= document.querySelector(".tl")
-    var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90
-    var lineHeight = pins[5].offsetTop - pins[0].offsetTop - 54.4
-    var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left
-    var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left
-    var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45
-    var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + 25.7
-    var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4
+    var pins = document.querySelectorAll(".tl-img");
+    var tl_section= document.querySelector(".tl");
+    var lineWidth = pins[1].offsetLeft - pins[0].offsetLeft - 90;
+    var lineHeight = pins[5].offsetTop - pins[0].offsetTop - 54.4;
+    var lineX = pins[0].getBoundingClientRect().left + 91 - tl_section.getBoundingClientRect().left;
+    var curveX = pins[0].getBoundingClientRect().left - 105 - tl_section.getBoundingClientRect().left;
+    var lineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 45;
+    var VlineX = pins[0].getBoundingClientRect().left - tl_section.getBoundingClientRect().left + ((document.querySelector(".tl-pin-circle").clientWidth)*0.6)/2;
+    var VlineY = pins[0].getBoundingClientRect().top - tl_section.getBoundingClientRect().top + 55.4;
     var curveY = lineY + 190
     var curves = document.querySelectorAll(".tl-crv")
     var lines = document.querySelectorAll(".tl-line")
@@ -43,6 +43,10 @@ function tlLines(){
 
     
 }
+
+setTimeout(() => {
+    tlLines();
+}, 3500);
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
