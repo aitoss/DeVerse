@@ -1,3 +1,10 @@
+
+
+setTimeout(function() {
+    document.querySelector('.block').style.display="none";
+    document.querySelector('.mainBox').style.display="block";
+}, 3000);
+
 tlLines()
 
 function tlLines(){
