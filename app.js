@@ -122,7 +122,7 @@ function pad(d) {
 }
 
 
-var countDownDate = new Date("Sep 24, 2022 00:00:00").getTime();
+var countDownDate = new Date("Sep 24, 2022 10:00:00").getTime();
 
 var myfunc = setInterval(function() {
     var now = new Date().getTime();
